@@ -45,7 +45,7 @@ export const Cardmodelone = () => {
                     <li className="list-group-item"><i className="fas fa-car"></i> Cochera / Galeria </li>
                 </ul>
             </div>
-            <div className="text-center">
+            <div className="text-center info">
                 <button className="btn btn-primary" onClick={() => handleWhatsAppAction()}>
                     Más información
                 </button>

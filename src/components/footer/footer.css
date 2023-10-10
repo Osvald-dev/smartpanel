@@ -1,9 +1,10 @@
-.icon-size{
+.icon-size {
     font-size: 2em;
     margin-right: 10px;
     padding: 15px;
 }
-.footer{
+
+.footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,26 +12,41 @@
     align-items: center;
 }
 
-.flecha{
+.flecha {
     margin-bottom: 2em;
 }
 
-@media (max-width:350px){
-    .footer{
+@media (max-width:350px) {
+    .footer {
         display: flex;
         flex-direction: column;
     }
 }
+
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
     right: 20px;
     font-size: 40px;
-
+    animation: heartbeat 1.5s infinite;
     padding: 10px;
-    border-radius: 50%; 
-  }
-  
-.fa-whatsapp{
+    border-radius: 50%;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fa-whatsapp {
     color: rgb(61, 159, 25);
-  }
+}

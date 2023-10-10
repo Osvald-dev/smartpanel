@@ -5,7 +5,7 @@ import './card.css';
 
 export const Cardmodeltwo = () => {
     return (
-        <div className="container-mb">
+        <div className="container-mb bg-modelo1">
             <div className="text-center mb-4">
                 <h2>Nombre del modelo</h2>
                 <p>Descripción a cerca del modelo</p>
@@ -44,7 +44,7 @@ export const Cardmodeltwo = () => {
                     <li className="list-group-item"><i className="fas fa-car"></i> Cochera / Galeria </li>
                 </ul>
             </div>
-            <div className="text-center">
+            <div className="text-center info">
                 <button className="btn btn-primary" onClick={() => handleWhatsAppAction()}>
                     Más información
                 </button>

@@ -25,24 +25,25 @@ const Home = () => {
       <div>
         <Texto></Texto>
       </div>
-      <div className="container my-5">
+      <div className="container-full ">
+        <h2>Algunos de nuestros Modelos</h2>
         <div className="row row-cols-1 row-cols-md-2">
-        <div className="col mb-4">
+        <div className="col ">
             <Cardmodelone />
           </div>
-          <div className="col mb-4">
+          <div className="col ">
             <Cardmodeltwo />
           </div>
-          <div className="col mb-4">
+          <div className="col ">
             <Cardmodelthree />
           </div>
-          <div className="col mb-4">
+          <div className="col ">
             <Cardmodelfour />
           </div>
-          <div className="col mb-4">
+          <div className="col ">
             <Cardmodelfive />
           </div>
-          <div className="col mb-4">
+          <div className="col ">
             <Cardmodelsix />
           </div>
         </div>
