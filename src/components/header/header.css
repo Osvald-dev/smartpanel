@@ -1,0 +1,18 @@
+.container{
+    margin-top: 0;
+}
+.bg-custom-color{
+    background-color: #b5914d;
+}
+.nav-item{
+    padding: 1em;
+}
+.nav-link{
+    color: aliceblue;
+}
+.nav-link active{
+    color: aliceblue;
+}
+.custom-logo {
+    width: 100px; 
+}
