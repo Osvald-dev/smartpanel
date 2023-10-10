@@ -21,3 +21,16 @@
         flex-direction: column;
     }
 }
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+
+    padding: 10px;
+    border-radius: 50%; 
+  }
+  
+.fa-whatsapp{
+    color: rgb(61, 159, 25);
+  }

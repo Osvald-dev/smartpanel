@@ -1,4 +1,5 @@
 import React from 'react';
+import 'font-awesome/css/font-awesome.min.css';
 import { Header } from '../components/header/Header';
 import { Slider } from '../components/slider/Slider';
 import { Texto } from '../components/text/Texto';
