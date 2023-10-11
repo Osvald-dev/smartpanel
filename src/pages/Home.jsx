@@ -12,7 +12,7 @@ import { Cardmodelfive } from '../components/cards/Cardmodelfive';
 import { Cardmodelsix } from '../components/cards/Cardmodelsix';
 import { Houseplane } from '../components/plano/houseplane';
 import { Footer } from '../components/footer/footer';
-
+import './home.css'
 const Home = () => {
   return (
     <>
@@ -25,10 +25,12 @@ const Home = () => {
       <div>
         <Texto></Texto>
       </div>
-      <div className="container-full ">
-        <h2>Algunos de nuestros Modelos</h2>
+      <div class="separator">
+        <span class="separator-text">Nuestros Modelos</span>
+      </div>
+      <div className="container-fluid ">
         <div className="row row-cols-1 row-cols-md-2">
-        <div className="col ">
+          <div className="col ">
             <Cardmodelone />
           </div>
           <div className="col ">

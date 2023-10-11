@@ -1,9 +1,15 @@
 import React from 'react';
 import img4 from '../../assets/images/img4.png'
 import plano from '../../assets/images/plano.webp'
+import { generateRandomPhoneNumber } from '../../utils/whatsapp';
 import './card.css';
 
 export const Cardmodelfour = () => {
+    const handleWhatsAppAction = () => {
+        const phoneNumber = generateRandomPhoneNumber();
+        const whatsappLink = `https://wa.me/${phoneNumber}`;
+        window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
+    };
     return (
         <div className="container-mb bg-modelo1">
             <div className="text-center mb-4">
@@ -45,7 +51,10 @@ export const Cardmodelfour = () => {
                 </ul>
             </div>
             <div className="text-center info">
-                <button className="btn btn-primary" onClick={() => handleWhatsAppAction()}>
+                <button
+                    className="btn btn-success"
+                    onClick={handleWhatsAppAction}  
+                >
                     Más información
                 </button>
             </div>
@@ -53,10 +62,4 @@ export const Cardmodelfour = () => {
 
     );
 }
-
-const handleWhatsAppAction = () => {
-    // Aquí Lógica para asignar entre 4 números de teléfono
-    window.location.href = 'https://wa.me/1234567890'; // 
-};
-
 

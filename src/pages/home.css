@@ -1,0 +1,27 @@
+
+.separator{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  .separator-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#f2f2f2 ;
+    background-color: #8b6d37; /* Ajusta el color de fondo según tu diseño */
+    padding: 0 10px; /* Ajusta el espaciado alrededor del texto */
+    width: 100%;
+    text-align: center;
+    position: relative;
+    opacity: 0; /* Inicialmente establecemos la opacidad a 0 */
+    animation: fadeIn 3s forwards; 
+
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* La opacidad inicial es 0 */
+    }
+    to {
+      opacity: 1; /* La opacidad final es 1 */
+    }
+  }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaYoutube, FaArrowUp } from 'react-icons/fa';
 import './footer.css'
 
@@ -24,9 +25,21 @@ export const Footer = () => {
 
                 <div className="links">
                     <ul className="list-unstyled">
-                        <li><a href="#about" className="text-white">Acerca de Nosotros</a></li>
-                        <li><a href="#services" className="text-white">Nuestros Servicios</a></li>
-                        <li><a href="#contact" className="text-white">Contacto</a></li>
+                        <li>
+                            <Link><a href="#Quienessomos" className="text-white">¿Quiénes Somos?</a></Link>
+                        </li>
+                        <li>
+                            <Link to='/preguntas'><a href="#preguntas" className="text-white">Preguntas Frecuentes</a></Link>
+                        </li>
+                        <li>
+                            <Link><a href="#detalles" className="text-white">Detalles Constructivos</a></Link>
+                        </li>
+                        <li>
+                            <Link><a href="#comentarios" className="text-white">Comentarios</a></Link>
+                        </li>
+                        <li>
+                            <Link to='/modelos/doshabitaciones'><a href="#comentarios" className="text-white">Modelos</a></Link>
+                        </li>
                     </ul>
                 </div>
 

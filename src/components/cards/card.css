@@ -2,10 +2,17 @@
     max-height: 65vh;
 }
 .bg-modelo{
-    background-color: #b5914d;
+    background-color:   #f2f2f2;
  
 }
 .bg-modelo1{
-    background-color:  #c5a078;
+    background-color:  #f2f2f2;
 
+}
+.info{
+    padding-bottom: 2em;
+}
+.list-group-item{
+    background-color:  #c7c7c7;
+    color: #000000;
 }

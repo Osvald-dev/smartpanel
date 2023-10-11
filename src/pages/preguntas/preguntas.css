@@ -1,0 +1,32 @@
+.bg-preguntas{
+    background-color: rgb(184, 184, 184);
+    height: 100vh;
+}
+.accordion-button{
+    background-color: #b5914d;
+}
+.navbar{
+    background-color: #b5914d;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.navbar-logo{
+    width: 130px;
+}
+.whats{
+    background-color: transparent;
+    border: none;
+    font-size: 2.5rem;
+}
+.arrow{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+.fa-whatsapp{
+   color: rgb(70,255,0);
+}

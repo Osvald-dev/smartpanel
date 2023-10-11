@@ -1,12 +1,44 @@
 import React from 'react'
+import './preguntas.css'
+import logo from '../../assets/logo/Logo-Blanco.png'
+import { Link } from 'react-router-dom';
+
+import { generateRandomPhoneNumber } from '../../utils/whatsapp';
 
 export const Preguntas = () => {
+
+    const handleWhatsAppAction = () => {
+        const phoneNumber = generateRandomPhoneNumber();
+        const whatsappLink = `https://wa.me/${phoneNumber}`;
+        window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
+    };
+
+
     return (
-        <div>
+        <div className='bg-preguntas'>
+            <nav className="navbar">
+                <Link to='/'>
+                    <img src={logo} alt='Logo' className='navbar-logo' />
+                </Link>
+
+                <div >
+                    <Link to='/'>
+                    <button className="navbar-button arrow">
+                        <i className="fas fa-arrow-up"></i>
+                    </button>
+                    </Link>
+                </div>
+                <div >
+                    <button className="navbar-button whats" onClick={handleWhatsAppAction}>
+                        <i className="fab fa-whatsapp"></i>
+                    </button>
+                </div>
+
+            </nav>
             <div className="accordion" id="accordionPanelsStayOpenExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                        <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        <button className="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                             Tipo de construcción
                         </button>
                     </h2>

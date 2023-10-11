@@ -32,26 +32,9 @@ export const Header = () => {
                   Modelos
                 </span>
                 <ul className="dropdown-menu">
-                  <li className="dropdown-submenu">
-                    <span className="dropdown-item dropdown-toggle">
-                      Planta Alta
-                    </span>
-                    <ul className="dropdown-menu">
-                      <li><Link className="dropdown-item" to="/modelos/planta-alta/doshabitaciones">2 Habitaciones</Link></li>
-                      <li><Link className="dropdown-item" to="/modelos/planta-alta/treshabitaciones">3 Habitaciones</Link></li>
-                      <li><Link className="dropdown-item" to="/modelos/planta-alta/cuatrohabitaciones">4 Habitaciones</Link></li>
-                    </ul>
-                  </li>
-                  <li className="dropdown-submenu">
-                    <span className="dropdown-item dropdown-toggle">
-                      Planta Baja
-                    </span>
-                    <ul className="dropdown-menu">
-                      <li><Link className="dropdown-item" to="/modelos/planta-baja/doshabitaciones">2 Habitaciones</Link></li>
-                      <li><Link className="dropdown-item" to="/modelos/planta-baja/treshabitaciones">3 Habitaciones</Link></li>
-                      <li><Link className="dropdown-item" to="/modelos/planta-baja/cuatrohabitaciones">4 Habitaciones</Link></li>
-                    </ul>
-                  </li>
+                  <li><Link className="dropdown-item" to="/modelos/doshabitaciones">2 Habitaciones</Link></li>
+                  <li><Link className="dropdown-item" to="/modelos/treshabitaciones">3 Habitaciones</Link></li>
+                  <li><Link className="dropdown-item" to="/modelos/cuatrohabitaciones">4 Habitaciones</Link></li>
                   <li>
                     <Link className="dropdown-item" to="/modelos/duplex">Duplex</Link>
                   </li>
