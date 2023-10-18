@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Textoventajas = () => {
   return (
-    <div>
+    <div className='bg-color-text'>
       <div className="container my-5">
         <div className="row">
           <div className="col-lg-3 col-md-6">

@@ -25,8 +25,13 @@ const Home = () => {
       <div>
         <Texto></Texto>
       </div>
-      <div class="separator">
-        <span class="separator-text">Nuestros Modelos</span>
+      <div className='tucasa'>
+        <span className='separator-text-2'>Tu Casa desde <br /> USD 120</span>
+
+      </div>
+      <div className="separator">
+        <span className='separator-text'>Nuestros Modelos</span>
+
       </div>
       <div className="container-fluid ">
         <div className="row row-cols-1 row-cols-md-2">

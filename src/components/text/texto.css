@@ -1,5 +1,5 @@
 .texto-home{
-    background-color: #ffc454;
+    background-color: #b5914d
  
 }
 .texto-div{
@@ -13,13 +13,15 @@
     border-radius: 6px;
 }
 .p-ventajas{
-    margin:2em
+    margin:2em;
+    /* color: aliceblue; */
 }
 .lead{
     text-align: center;
     padding: 20px;
     font-size: 1.2em;
     font-weight: 400;
+    color: white;
 }
 .texto-inicio{
     text-align: center;
@@ -28,16 +30,22 @@
 
 .container{
     margin-top: 5em;
+    margin-bottom: 0px !important;
 }
 h1{
     text-align: center;
     margin: 1em;
+    color:white;
+    font-size: 1.5rem;
 }
-.h1-div{
+.img-smart{
     width: 100%;
     background-image: url('../../assets/images/imagen1.png'); /* Ruta de la imagen */
     background-size: cover; /* La imagen cubrirá todo el contenedor */
     background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-position: center center;
     height: 90vh;
 }
 @media (max-width:550px) {
@@ -51,3 +59,43 @@ h1{
 .col-lg-6{
     padding: 10px;
 }
+.opacity{
+    background-color: #b5914d;
+    opacity: 0.8;
+    padding: 1em;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1.6rem;
+  }
+  
+  .card-set {
+    width: 60%; /* Cambiado a 33% para que haya tres tarjetas por fila */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+  }
+  
+  .card-set:hover {
+    transform: scale(1.5);
+  }
+  
+  .card-image-set {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen sin perder la relación de aspecto */
+    object-position: center center; /* Centra la imagen */
+  }
+ .text-center{
+    margin-top: 1rem;
+ }
+ .bg-color-text{
+    background-color: #b5914d;
+    color: aliceblue;
+ }
+ 

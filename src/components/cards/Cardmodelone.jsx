@@ -1,7 +1,7 @@
 import React from 'react';
 import { generateRandomPhoneNumber } from '../../utils/whatsapp.js'
 import img1 from '../../assets/images/img1.png'
-import plano from '../../assets/images/plano.webp'
+import plano601 from '../../assets/images/modelos-planos/60m2-4317-plano.jpg'
 import './card.css';
 
 export const Cardmodelone = () => {
@@ -13,11 +13,7 @@ export const Cardmodelone = () => {
     return (
 
         <div className="container-mb bg-modelo ">
-            <div className="text-center mb-4">
-                <h2>Nombre de Modelo</h2>
-                <p>Descripcion de modelo</p>
-            </div>
-
+ 
             <div id="carouselExampleFade1" className="carousel slide carousel-fade">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -28,7 +24,7 @@ export const Cardmodelone = () => {
                     </div>
                     <div className="carousel-item">
                         <div className="card">
-                            <img src={plano} className="card-img-top img-cards" alt="..." />
+                            <img src={plano601} className="card-img-top img-cards" alt="..." />
 
                         </div>
                     </div>
@@ -43,12 +39,14 @@ export const Cardmodelone = () => {
                 </button>
             </div>
             <div className="text-center mb-4">
-                <h2>Modelo 1</h2>
+                <h2 className='name-model'>SP - A2</h2>
                 <ul className="list-group">
-                    <li className="list-group-item"><i className="fas fa-bed"></i> 4 habitaciones</li>
-                    <li className="list-group-item"><i className="fas fa-ruler"></i> 600 mt2</li>
-                    <li className="list-group-item"><i className="fas fa-bath"></i> 2 Baños</li>
-                    <li className="list-group-item"><i className="fas fa-car"></i> Cochera / Galeria </li>
+                    <li className="list-group-item"><i className="fas fa-ruler"></i>  60 mt2</li>
+                    <li className="list-group-item"><i className="fas fa-bed"></i> 2 Habitaciones</li>
+                    <li className="list-group-item"><i className="fas fa-bath"></i> 1 Baño</li>
+                    <li className="list-group-item"><i className="fas fa-cutlery"></i> Cocina - Comedor </li>
+                    <li className="list-group-item"><i className="fas fa-car"></i>  Galeria </li>
+
                 </ul>
             </div>
             <div className="text-center info">

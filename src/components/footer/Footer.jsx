@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaYoutube, FaArrowUp } from 'react-icons/fa';
+import { generateRandomPhoneNumber } from '../../utils/whatsapp';
 import './footer.css'
 
 export const Footer = () => {
@@ -10,6 +11,11 @@ export const Footer = () => {
             top: 0,
             behavior: 'smooth'
         });
+    };
+    const handleWhatsAppAction = () => {
+        const phoneNumber = generateRandomPhoneNumber();
+        const whatsappLink = `https://wa.me/${phoneNumber}`;
+        window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
     };
 
     return (
@@ -26,29 +32,30 @@ export const Footer = () => {
                 <div className="links">
                     <ul className="list-unstyled">
                         <li>
-                            <Link><a href="#Quienessomos" className="text-white">¿Quiénes Somos?</a></Link>
+                            <Link to="#Quienessomos" className="text-white">¿Quiénes Somos?</Link>
                         </li>
                         <li>
-                            <Link to='/preguntas'><a href="#preguntas" className="text-white">Preguntas Frecuentes</a></Link>
+                            <Link to="/preguntas" className="text-white">Preguntas Frecuentes</Link>
                         </li>
                         <li>
-                            <Link><a href="#detalles" className="text-white">Detalles Constructivos</a></Link>
+                            <Link to="#detalles" className="text-white">Detalles Constructivos</Link>
                         </li>
                         <li>
-                            <Link><a href="#comentarios" className="text-white">Comentarios</a></Link>
+                            <Link to="#comentarios" className="text-white">Comentarios</Link>
                         </li>
                         <li>
-                            <Link to='/modelos/doshabitaciones'><a href="#comentarios" className="text-white">Modelos</a></Link>
+                            <Link to="/modelos/doshabitaciones" className="text-white">Modelos</Link>
                         </li>
                     </ul>
                 </div>
 
+
                 <div className="redes-footer">
                     <div className="footer-social-icons">
-                        <a href="https://www.instagram.com/" className='icon-size'>
+                        <a href="https://www.instagram.com/smartpanelcba/" className='icon-size'>
                             <FaInstagram className="text-white" />
                         </a>
-                        <a href="https://www.facebook.com/" className='icon-size'>
+                        <a href="https://www.facebook.com/smartpanelcba" className='icon-size'>
                             <FaFacebook className="text-white" />
                         </a>
                     </div>
@@ -56,7 +63,7 @@ export const Footer = () => {
 
 
             </div>
-            <div className="whatsapp-icon">
+            <div className="whatsapp-icon" onClick={handleWhatsAppAction}>
                 <a
                     href="https://api.whatsapp.com/send?phone=TUNUMERO"
                     target="_blank"

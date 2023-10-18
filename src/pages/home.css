@@ -3,12 +3,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
   .separator-text {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    color:#f2f2f2 ;
-    background-color: #8b6d37; /* Ajusta el color de fondo según tu diseño */
+ 
+    background-color: #ffffff; /* Ajusta el color de fondo según tu diseño */
     padding: 0 10px; /* Ajusta el espaciado alrededor del texto */
     width: 100%;
     text-align: center;
@@ -16,6 +17,32 @@
     opacity: 0; /* Inicialmente establecemos la opacidad a 0 */
     animation: fadeIn 3s forwards; 
 
+}
+  .separator-text-2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:#ffffff ;
+
+    padding: 0 10px; /* Ajusta el espaciado alrededor del texto */
+    width: 100%;
+    text-align: center;
+    position: relative;
+    opacity: 0; /* Inicialmente establecemos la opacidad a 0 */
+    animation: fadeIn 3s forwards; 
+    
+}
+.tucasa{
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 35vh;
+    background-image: url('../assets/images/tucasa.jpg');
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #000000; 
+    background-size: cover;
 }
 @keyframes fadeIn {
     from {
@@ -25,3 +52,8 @@
       opacity: 1; /* La opacidad final es 1 */
     }
   }
+
+p{
+  margin: 0;
+}
+

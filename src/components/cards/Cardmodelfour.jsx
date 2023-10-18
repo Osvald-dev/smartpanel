@@ -1,6 +1,6 @@
 import React from 'react';
 import img4 from '../../assets/images/img4.png'
-import plano from '../../assets/images/plano.webp'
+import plano from '../../assets/images/modelos-planos/110m2-8822-plano.jpg'
 import { generateRandomPhoneNumber } from '../../utils/whatsapp';
 import './card.css';
 
@@ -12,10 +12,7 @@ export const Cardmodelfour = () => {
     };
     return (
         <div className="container-mb bg-modelo1">
-            <div className="text-center mb-4">
-                <h2>Nombre de modelo</h2>
-                <p>Descripcion del modelo</p>
-            </div>
+
 
             <div id="carouselExampleFade4" className="carousel slide carousel-fade">
                 <div className="carousel-inner">
@@ -42,12 +39,13 @@ export const Cardmodelfour = () => {
                 </button>
             </div>
             <div className="text-center mb-4">
-                <h2>Modelo tal</h2>
+                <h2 className='name-model'>SP - B3</h2>
                 <ul className="list-group">
-                <li className="list-group-item"><i className="fas fa-bed"></i> 4 habitaciones</li>
-                    <li className="list-group-item"><i className="fas fa-ruler"></i> 600 mt2</li>
+                <li className="list-group-item"><i className="fas fa-ruler"></i> 110 mt2</li>
+                    <li className="list-group-item"><i className="fas fa-bed"></i> 3 habitaciones</li>
                     <li className="list-group-item"><i className="fas fa-bath"></i> 2 Baños</li>
-                    <li className="list-group-item"><i className="fas fa-car"></i> Cochera / Galeria </li>
+                    <li className="list-group-item"><i className="fas fa-cutlery"></i> Cocina - Comedor </li>
+                    <li className="list-group-item"><i className="fas fa-home"></i> Galería</li>
                 </ul>
             </div>
             <div className="text-center info">
