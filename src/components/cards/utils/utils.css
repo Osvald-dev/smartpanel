@@ -1,0 +1,15 @@
+.btn-primary{
+    color: white;
+    background: rgb(181,145,77);
+background: linear-gradient(183deg, rgba(181,145,77,1) 39%, rgba(197,160,120,1) 100%);
+    border: none;
+    padding: .5em;
+    margin: 1em;
+}
+.navigation-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

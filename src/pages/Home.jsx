@@ -1,68 +1,86 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import { Header } from '../components/header/Header';
 import { Slider } from '../components/slider/Slider';
 import { Texto } from '../components/text/Texto';
 import { Textoventajas } from '../components/text/Textoventajas';
-import { Cardmodelone } from '../components/cards/Cardmodelone';
-import { Cardmodeltwo } from '../components/cards/Cardmodeltwo';
-import { Cardmodelthree } from '../components/cards/Cardmodelthree';
-import { Cardmodelfour } from '../components/cards/Cardmodelfour';
-import { Cardmodelfive } from '../components/cards/Cardmodelfive';
-import { Cardmodelsix } from '../components/cards/Cardmodelsix';
+import { CardA2 } from '../components/cards/dos-habitaciones/CardA2';
+import { CardB2 } from '../components/cards/dos-habitaciones/CardB2';
+import { CardA3 } from '../components/cards/tres-habitaciones/CardA3';
+import { CardB3 } from '../components/cards/tres-habitaciones/CardB3';
+import { CardC3 } from '../components/cards/tres-habitaciones/CardC3';
+import { CardDP1 } from '../components/cards/duplex/CardDP1';
 import { Houseplane } from '../components/plano/houseplane';
-import { Footer } from '../components/footer/footer';
+import { Footer } from '../components/footer/Footer';
+import { Precio } from './Precio';
 import './home.css'
+import { Buttons } from '../components/cards/utils/Buttons';
+
+
+
 const Home = () => {
+
   return (
     <>
-      <div>
-        <Header></Header>
-      </div>
-      <div>
-        <Slider></Slider>
-      </div>
-      <div>
-        <Texto></Texto>
-      </div>
-      <div className='tucasa'>
-        <span className='separator-text-2'>Tu Casa desde <br /> USD 120</span>
+      <div id="#inicio">
 
-      </div>
-      <div className="separator">
-        <span className='separator-text'>Nuestros Modelos</span>
+        <div>
+          <Header></Header>
+        </div>
+        <div>
+          <Slider></Slider>
+        </div>
+        <div>
+          <Texto></Texto>
+        </div>
+        <Precio />
+        <div className="separator">
+          <span className='separator-text'>Nuestros Modelos</span>
+        </div>
+        <div className="container-fluid ">
+          <div className="row row-cols-1 row-cols-md-2">
+            <div className="col ">
+              <CardA2 />
+            </div>
+            <div className="col ">
+              <CardB2 />
+            </div>
+            <div className="col ">
+              <CardA3 />
+            </div>
+            <div className="col ">
+              <CardB3 />
+            </div>
+            <div className="col ">
+              <CardC3 />
+            </div>
+            <div className="col ">
+              <CardDP1 />
+            </div>
 
-      </div>
-      <div className="container-fluid ">
-        <div className="row row-cols-1 row-cols-md-2">
-          <div className="col ">
-            <Cardmodelone />
           </div>
-          <div className="col ">
-            <Cardmodeltwo />
-          </div>
-          <div className="col ">
-            <Cardmodelthree />
-          </div>
-          <div className="col ">
-            <Cardmodelfour />
-          </div>
-          <div className="col ">
-            <Cardmodelfive />
-          </div>
-          <div className="col ">
-            <Cardmodelsix />
+          <div>
+            <Buttons />
           </div>
         </div>
-      </div>
-      <div>
-        <Houseplane></Houseplane>
-      </div>
-      <div>
-        <Textoventajas></Textoventajas>
-      </div>
-      <div>
-        <Footer></Footer>
+        <div>
+          <Houseplane></Houseplane>
+        </div>
+
+        <div className="separator">
+          <span className='separator-text'>Estas en el camino correcto</span>
+          <div className='arrow-icon'>
+            <i className='fas fa-arrow-down'></i>
+          </div>
+        </div>
+        <div>
+          <Textoventajas></Textoventajas>
+        </div>
+        <div>
+          <Footer></Footer>
+        </div>
       </div>
     </>
   );

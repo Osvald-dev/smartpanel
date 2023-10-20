@@ -32,7 +32,7 @@ export const Footer = () => {
                 <div className="links">
                     <ul className="list-unstyled">
                         <li>
-                            <Link to="#Quienessomos" className="text-white">¿Quiénes Somos?</Link>
+                            <Link to="quienes-somos" className="text-white">¿Quiénes Somos?</Link>
                         </li>
                         <li>
                             <Link to="/preguntas" className="text-white">Preguntas Frecuentes</Link>

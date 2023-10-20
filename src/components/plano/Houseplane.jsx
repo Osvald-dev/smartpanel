@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/logo/Logo-Completo-Color.png'
-import plano from '../../assets/images/plano.webp'
+import plano from '../../assets/images/modelos-planos/100m2-7525-plano.png'
 import './plano.css'
 
 export const Houseplane = () => {

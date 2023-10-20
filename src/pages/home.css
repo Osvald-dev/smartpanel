@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
 }
   .separator-text {
@@ -17,6 +19,11 @@
     opacity: 0; /* Inicialmente establecemos la opacidad a 0 */
     animation: fadeIn 3s forwards; 
 
+}
+.fa-arrow-down{
+  font-size: 5em;
+ 
+  color:#b5914d;
 }
   .separator-text-2 {
     font-size: 1.8rem;
@@ -36,6 +43,7 @@
   flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     height: 35vh;
     background-image: url('../assets/images/tucasa.jpg');
     background-repeat: repeat-x;
@@ -56,4 +64,10 @@
 p{
   margin: 0;
 }
-
+.div-precio{
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 0.4;
+  padding: 2em;
+  text-align: center;
+}

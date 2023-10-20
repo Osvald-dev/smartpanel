@@ -1,33 +1,48 @@
 import React from 'react';
 import './modelos.css';
-import { Link } from 'react-router-dom';
+import { CardA2 } from '../../components/cards/dos-habitaciones/CardA2';
+import { CardB2 } from '../../components/cards/dos-habitaciones/CardB2';
+import { CardC2 } from '../../components/cards/dos-habitaciones/CardC2';
+import { CardD2 } from '../../components/cards/dos-habitaciones/CardD2';
+import { CardE2 } from '../../components/cards/dos-habitaciones/CardE2';
+import { CardF2 } from '../../components/cards/dos-habitaciones/CardF2';
+import { CardG2 } from '../../components/cards/dos-habitaciones/CardG2';
 
 const DosHabitaciones = () => {
   return (
-    <div>
-      <nav className="navbar">
-        <Link to='/'>
-          <img src={logo} alt='Logo' className='navbar-logo' />
-        </Link>
-
-        <div >
-          <Link to='/'>
-            <button className="navbar-button arrow">
-              <i className="fas fa-arrow-up"></i>
-            </button>
-          </Link>
+    <div className='bg-2h'>
+      
+      <section className="section-two-bedrooms">
+        <div className="container-full">
+        <div className="section-title-container">
+        <h2 className="section-title"> 2 Habitaciones</h2>
+      </div>
+          <div className="row">
+            <div className="col-md-4">
+              <CardA2 />
+            </div>
+            <div className="col-md-4">
+              <CardB2 />
+            </div>
+            <div className="col-md-4">
+              <CardC2 />
+            </div>
+            <div className="col-md-4">
+              <CardD2 />
+            </div>
+            <div className="col-md-4">
+              <CardE2 />
+            </div>
+            <div className="col-md-4">
+              <CardF2 />
+            </div>
+            <div className="col-md-4">
+              <CardG2 />
+            </div>
+          </div>
         </div>
-        <div >
-          <button className="navbar-button whats" onClick={handleWhatsAppAction}>
-            <i className="fab fa-whatsapp"></i>
-          </button>
-        </div>
-
-      </nav>
-      <h2>Modelo de Dos Habitaciones</h2>
-      {/* Contenido específico para el modelo de dos habitaciones */}
+      </section>
     </div>
   );
 };
-
-export default DosHabitaciones; 
+export default DosHabitaciones;

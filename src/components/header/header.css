@@ -1,6 +1,9 @@
 
-.container{
+.container-sm{
     margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 .bg-custom-color{
     background-color: #b5914d;

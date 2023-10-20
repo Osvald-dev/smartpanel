@@ -30,3 +30,18 @@
   .text-overlay p {
     margin: 0;
   }
+
+/* CSS para el carrusel en pantallas más grandes */
+@media (min-width: 1420px) {
+  .carousel-models {
+    max-width: 80%; /* Establece un ancho máximo para el carrusel */
+    margin: 0 auto; /* Centra el carrusel en la pantalla */
+  }
+}
+
+/* CSS para el carrusel en pantallas más pequeñas */
+@media (max-width: 1419px) {
+  .carousel-models {
+    max-width: 100%; /* Usa el ancho completo en pantallas más pequeñas */
+  }
+}
