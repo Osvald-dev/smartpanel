@@ -1,5 +1,5 @@
 import React from 'react';
-import img5 from '../../../assets/images/modelos-renders/sp-e3.jpg'
+import img5 from '../../../assets/images/modelos-renders/sp-e3.webp'
 import plano from '../../../assets/images/modelos-planos/93m2-7320-plano.png'
 import { generateRandomPhoneNumber } from '../../../utils/whatsapp';
 import '../card.css';
@@ -11,10 +11,10 @@ export const CardE3 = () => {
         window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
     };
     return (
-        <div className="container-mb bg-modelo">
+        <div className="container-full bg-modelo">
 
 
-            <div id="carouselExampleFade5" className="carousel slide carousel-fade">
+            <div id="carouselExampleFade14" className="carousel slide">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="card">
@@ -29,17 +29,17 @@ export const CardE3 = () => {
                         </div>
                     </div>
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="prev">
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade14" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="next">
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade14" data-bs-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className="text-center mb-4">
-                <h2 className='name-model'>SP - E3</h2>
+            <div className="row">
+                <h2 className='name-model'> E3</h2>
                 <ul className="list-group">
                 <li className="list-group-item"><i className="fas fa-ruler"></i> 93 mt2</li>
                     <li className="list-group-item"><i className="fas fa-bed"></i> 3 habitaciones</li>

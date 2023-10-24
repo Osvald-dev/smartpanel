@@ -5,7 +5,7 @@ export const Buttons = () => {
 
     return (
         < >
-           <h4>Conocé todos nuestros modelos</h4>
+           <h4 className="text-center">Conocé todos nuestros modelos</h4>
             <div className="navigation-buttons">
                 <Link to="/modelos/doshabitaciones" className="btn btn-primary mx-2">Dos Habitaciones</Link>
                 <Link to="/modelos/treshabitaciones" className="btn btn-primary mx-2">Tres Habitaciones</Link>

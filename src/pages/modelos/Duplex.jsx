@@ -13,7 +13,7 @@ const Duplex = () => {
         <div className="section-title-container">
         <h2 className="section-title"> Duplex </h2>
       </div>
-          <div className="row">
+          <div className="container-full">
             <div className="col-md-4">
               <CardDP1 />
             </div>

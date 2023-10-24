@@ -1,6 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+
 import 'font-awesome/css/font-awesome.min.css';
 import { Header } from '../components/header/Header';
 import { Slider } from '../components/slider/Slider';
@@ -39,25 +38,20 @@ const Home = () => {
         <div className="separator">
           <span className='separator-text'>Nuestros Modelos</span>
         </div>
-        <div className="container-fluid ">
-          <div className="row row-cols-1 row-cols-md-2">
-            <div className="col ">
-              <CardA2 />
+        <div className="container-flull ">
+          <div className='bg-cards'>
+            <div  >              <CardA2 />
             </div>
-            <div className="col ">
-              <CardB2 />
+            <div  >              <CardB2 />
             </div>
-            <div className="col ">
+            <div >
               <CardA3 />
             </div>
-            <div className="col ">
-              <CardB3 />
+            <div  >              <CardB3 />
             </div>
-            <div className="col ">
-              <CardC3 />
+            <div  >              <CardC3 />
             </div>
-            <div className="col ">
-              <CardDP1 />
+            <div  >              <CardDP1 />
             </div>
 
           </div>

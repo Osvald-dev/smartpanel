@@ -1,5 +1,5 @@
 import React from 'react';
-import img2 from '../../../assets/images/modelos-renders/sp-b2.png'
+import img2 from '../../../assets/images/modelos-renders/sp-b2.webp'
 import plano from '../../../assets/images/modelos-planos/106m2-7432-plano.jpg'
 import { generateRandomPhoneNumber } from '../../../utils/whatsapp.js'
 
@@ -12,10 +12,10 @@ export const CardB2 = () => {
         window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
     };
     return (
-        <div className="container-mb bg-modelo1">
+        <div className="container-full bg-modelo">
 
 
-            <div id="carouselExampleFade2" className="carousel slide carousel-fade">
+            <div id="carouselExampleFade2" className="carousel slide ">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="card">
@@ -39,8 +39,8 @@ export const CardB2 = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className="text-center mb-4">
-                <h2 className='name-model'>SP - B2</h2>
+            <div className="row">
+                <h2 className='name-model'> B2</h2>
                 <ul className="list-group">
                 <li className="list-group-item"><i className="fas fa-ruler"></i> 106 mt2</li>
                     <li className="list-group-item"><i className="fas fa-bed"></i> 2 habitaciones</li>

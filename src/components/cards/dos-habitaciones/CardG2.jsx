@@ -1,6 +1,6 @@
 import React from 'react';
-import img2 from '../../../assets/images/modelos-renders/sp-g2.jpg'
-import plano from '../../../assets/images/modelos-planos/73-plano.png'
+import img2 from '../../../assets/images/modelos-renders/sp-g2.webp'
+import plano from '../../../assets/images/modelos-planos/81m2-5526-galeria-plano.png'
 import { generateRandomPhoneNumber } from '../../../utils/whatsapp.js'
 
 import '../card.css';
@@ -12,10 +12,8 @@ export const CardG2 = () => {
         window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
     };
     return (
-        <div className="container-mb bg-modelo1">
-
-
-            <div id="carouselExampleFade7" className="carousel slide carousel-fade">
+        <div className="container-full bg-modelo">
+            <div id="carouselExampleFade7" className="carousel slide">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="card">
@@ -39,8 +37,8 @@ export const CardG2 = () => {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className="text-center mb-4">
-                <h2 className='name-model'>SP - G2</h2>
+            <div className="row">
+                <h2 className='name-model'> G2</h2>
                 <ul className="list-group">
                 <li className="list-group-item"><i className="fas fa-ruler"></i> 81 mt2</li>
                     <li className="list-group-item"><i className="fas fa-bed"></i> 2 habitaciones - posibilidad de 3</li>

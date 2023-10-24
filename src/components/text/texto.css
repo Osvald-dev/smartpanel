@@ -1,3 +1,8 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .texto-home {
     background-color: #b5914d
 }
@@ -7,7 +12,7 @@
 }
 
 .p-ventajas {
-    margin: 2em;
+    margin: 1em;
     /* color: aliceblue; */
 }
 
@@ -38,7 +43,7 @@ h1 {
 
 .img-smart {
     width: 100%;
-    background-image: url('../../assets/images/imagen1.png');
+    background-image: url('../../assets/images/imagen1.webp');
     /* Ruta de la imagen */
     background-size: cover;
     /* La imagen cubrirá todo el contenedor */

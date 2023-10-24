@@ -29,5 +29,9 @@
     color: white;
 }
 .fa-whatsapp{
-   color: rgb(70,255,0);
+   color: rgb(255, 255, 255);
+}
+.list-group-2{
+    background-color: #b5914d;
+    padding: 0;
 }

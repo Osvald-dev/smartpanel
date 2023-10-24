@@ -1,9 +1,10 @@
 import React from 'react'
 import './texto.css'
-import bialet from '../../assets/images/bialet.png'
-import entrerios from '../../assets/images/entrerios.png'
-import santafe from '../../assets/images/santafe.png'
-import bsas from '../../assets/images/bsas.png'
+import camion from '../../assets/images/camion.jpg'
+import taller1 from '../../assets/images/taller1.jpg'
+import taller2 from '../../assets/images/taller2.jpg'
+import platea from '../../assets/images/vcp.png'
+import casa from '../../assets/images/casa-roja.jpg'
 import { Link } from 'react-router-dom'
 
 export const Texto = () => {
@@ -31,17 +32,21 @@ export const Texto = () => {
                         <p className='lead'>Nos enorgullecemos de nuestra especialización en el sistema WoodFrame, una metodología innovadora que se destaca por su eficiencia y rapidez en el proceso constructivo. Este enfoque nos permite acelerar la culminación de tu proyecto y ofrecerte la oportunidad de convertirte en propietario de tu nuevo espacio en tan solo 30 días.</p>
                         <p className='lead'>Nuestro compromiso no se limita a la rapidez; valoramos la calidad, la precisión y la durabilidad en cada etapa de la construcción. Trabajamos mano a mano contigo para entender tus necesidades y objetivos, diseñando soluciones a medida que superen tus expectativas.</p>
                         <div className="card-container">
+                          
                             <div className="card-set">
-                                <img src={bialet} alt="construcción en seco Bialet Mase Córdoba Woodframe" className="card-image-set" />
+                                <img src={taller1} alt="construcción en seco San José Entre Ríos Woodframe" className="card-image-set" />
                             </div>
                             <div className="card-set">
-                                <img src={entrerios} alt="construcción en seco San José Entre Ríos Woodframe" className="card-image-set" />
+                                <img src={taller2} alt="construcción en seco Santa Fe Woodframe" className="card-image-set" />
                             </div>
                             <div className="card-set">
-                                <img src={santafe} alt="construcción en seco Santa Fe Woodframe" className="card-image-set" />
+                                <img src={camion} alt="construcción en seco Bialet Mase Córdoba Woodframe" className="card-image-set" />
                             </div>
                             <div className="card-set">
-                                <img src={bsas} alt="construcción en seco Santa Fe Woodframe" className="card-image-set" />
+                                <img src={platea} alt="construcción en seco Santa Fe Woodframe" className="card-image-set" />
+                            </div>
+                            <div className="card-set">
+                                <img src={casa} alt="construcción en seco Santa Fe Woodframe" className="card-image-set" />
                             </div>
                         </div>
 

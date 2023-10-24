@@ -51,11 +51,14 @@
 }
 
 .fa-whatsapp {
-    background-color: white;
-    color: darkgreen;
+    background-color: rgb(0, 0, 0);
+    
     z-index: 10000;
-    padding: 0.3em;
+    padding: 0.2em;
     border-radius: 50%;
+}
+.fa{
+    color: #ffffff !important;
 }
 .footer-social-icons{
     padding-bottom: 80px;

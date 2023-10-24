@@ -11,38 +11,40 @@ import { CardG2 } from '../../components/cards/dos-habitaciones/CardG2';
 const DosHabitaciones = () => {
   return (
     <div className='bg-2h'>
-      
+
       <section className="section-two-bedrooms">
         <div className="container-full">
-        <div className="section-title-container">
-        <h2 className="section-title"> 2 Habitaciones</h2>
-      </div>
-          <div className="row">
-            <div className="col-md-4">
-              <CardA2 />
-            </div>
-            <div className="col-md-4">
-              <CardB2 />
-            </div>
-            <div className="col-md-4">
-              <CardC2 />
-            </div>
-            <div className="col-md-4">
-              <CardD2 />
-            </div>
-            <div className="col-md-4">
-              <CardE2 />
-            </div>
-            <div className="col-md-4">
-              <CardF2 />
-            </div>
-            <div className="col-md-4">
-              <CardG2 />
+          <div className="section-title-container">
+            <h2 className="section-title"> 2 Habitaciones</h2>
+          </div>
+            <div className='container-full'>
+              <div className='col-md-6' >
+                <CardA2 />
+              </div>
+              <div className='col-md-6'>
+                <CardB2 />
+              </div>
+              <div className='col-md-6'>
+                <CardC2 />
+              </div>
+              <div className='col-md-6'>
+                <CardD2 />
+              </div >
+              <div className='col-md-6'>
+                <CardE2 />
+              </div>
+              <div className='col-md-6'>
+                <CardF2 />
+              </div>
+              <div className='col-md-4'>
+                <CardG2 />
+              </div>
             </div>
           </div>
-        </div>
+        
       </section>
-    </div>
+      </div>
+      
   );
 };
 export default DosHabitaciones;

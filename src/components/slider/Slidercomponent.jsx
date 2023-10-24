@@ -1,7 +1,7 @@
 import React from 'react';
-import slide1 from '../../assets/images/slide1.png'
-import slide2 from '../../assets/images/slide2.png'
-import slide3 from '../../assets/images/slide3.png'
+import slide1 from '../../assets/images/slide1.webp'
+import slide2 from '../../assets/images/slide2.webp'
+import slide3 from '../../assets/images/slide3.webp'
 import './slider.css'
 export const Slidercomponent = () => {
   return (

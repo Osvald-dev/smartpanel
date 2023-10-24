@@ -16,7 +16,7 @@ const TresHabitaciones = () => {
         <div className="section-title-container">
         <h2 className="section-title"> 3 Habitaciones</h2>
       </div>
-          <div className="row">
+          <div className="container-full">
             <div className="col-md-4">
               <CardA3 />
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaFacebook, FaYoutube, FaArrowUp } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaArrowUp } from 'react-icons/fa';
 import { generateRandomPhoneNumber } from '../../utils/whatsapp';
 import './footer.css'
 
@@ -16,6 +16,19 @@ export const Footer = () => {
         const phoneNumber = generateRandomPhoneNumber();
         const whatsappLink = `https://wa.me/${phoneNumber}`;
         window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
+    };
+    const downloadPDF = (filePath, fileName) => {
+        const pdfLink = document.createElement('a');
+        pdfLink.href = filePath;
+        pdfLink.download = fileName;
+        document.body.appendChild(pdfLink);
+        pdfLink.click();
+        document.body.removeChild(pdfLink);
+    };
+
+    const downloadDetailsConstructivosPDFs = () => {
+        downloadPDF('/pdf/FICHA TECNICA CLASICA.pdf', 'linea-clasica-smart-panel.pdf');
+        downloadPDF('/pdf/FICHA TECNICA LINEA PREMIUMY.pdf', 'linea-premium-smart-panel.pdf');
     };
 
     return (
@@ -38,11 +51,15 @@ export const Footer = () => {
                             <Link to="/preguntas" className="text-white">Preguntas Frecuentes</Link>
                         </li>
                         <li>
-                            <Link to="#detalles" className="text-white">Detalles Constructivos</Link>
+                            <a
+                                href="#"
+                                onClick={downloadDetailsConstructivosPDFs}
+                                className="text-white"
+                            >
+                                Detalles Constructivos
+                            </a>
                         </li>
-                        <li>
-                            <Link to="#comentarios" className="text-white">Comentarios</Link>
-                        </li>
+
                         <li>
                             <Link to="/modelos/doshabitaciones" className="text-white">Modelos</Link>
                         </li>
@@ -66,7 +83,7 @@ export const Footer = () => {
             <div className="whatsapp-icon" onClick={handleWhatsAppAction}>
                 <a
                     href="https://api.whatsapp.com/send?phone=TUNUMERO"
-                    target="_blank"
+
                     rel="noopener noreferrer"
                 >
                     <i className="fa fa-whatsapp"></i>

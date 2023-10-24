@@ -1,7 +1,7 @@
 import React from 'react'
-import render1 from '../../assets/renders/render1.png'
-import render2 from '../../assets/renders/render2.png'
-import render3 from '../../assets/renders/render3.png'
+import render1 from '../../assets/images/modelos-renders/render2.webp';
+import render2 from '../../assets/images/modelos-renders/render3.webp';
+import render3 from '../../assets/images/modelos-renders/render4.webp';
 // import render4 from '../../assets/renders/render4'
 import './slider.css'
 

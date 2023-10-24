@@ -46,7 +46,7 @@ export const Preguntas = () => {
                         <div className="accordion-body">
                             <strong>¿Qué tipo de construcción realizamos?</strong><p>En Smart-Panel, nos especializamos en la construcción con el innovador y eficiente sistema de construcción en seco conocido como WoodFrame. Este método, de origen americano, es una técnica constructiva que se basa en la utilización de estructuras de madera sólida y ligera para erigir edificaciones de forma rápida y eficiente.</p>
                             <strong>Caracteristicas destacadas del sistema WoodFrame</strong>
-                            <ol className="list-group list-group-numbered">
+                            <ol className="list-group-2 list-group-numbered">
                                 <li className="list-group-item d-flex justify-content-between align-items-start">
                                     <div className="ms-2 me-auto">
                                         <div className="fw-bold">Eficiencia y Velocidad</div>
@@ -82,11 +82,11 @@ export const Preguntas = () => {
                         <div className="accordion-body">
                             <strong>¿Cúal es la forma de pago?</strong>
                             <p>Comprendemos claramente la importancia de proporcionar flexibilidad y transparencia en la forma de pago, y más en la situación que atravezamos, para que nuestros clientes puedan planificar su inversión de manera cómoda y efectiva. Nuestro proceso de pagos se estructura en varias etapas clave del proyecto:</p>
-                            <ol className="list-group list-group-numbered">
+                            <ol className="list-group-2 list-group-numbered">
                                 <li className="list-group-item d-flex justify-content-between align-items-start">
                                     <div className="ms-2 me-auto">
                                         <div className="fw-bold">Reserva y Preparación Inicial (10%)</div>
-                                        <p>Para comenzar el proceso de construcción en seco y asegurar la preparación adecuada de materiales y estructuras, requerimos un pago inicial del 10% del costo total del proyecto. Este pago sirve como señal para iniciar la coordinación de medidas y la organización de los materiales necesarios. Además, es importante mencionar que ofrecemos la <b>bonificación del flete</b>  hasta 600 km, asegurando así una ventaja adicional para nuestros clientes.</p>
+                                        <p>Para comenzar el proceso de construcción en seco y asegurar la preparación adecuada de materiales y estructuras, requerimos un pago inicial del 10% del costo total del proyecto. Este pago sirve como señal para iniciar la coordinación de medidas y la organización de los materiales necesarios. Además, es importante mencionar que ofrecemos la <b>bonificación del flete</b>  hasta 700 km, asegurando así una ventaja adicional para nuestros clientes.</p>
                                     </div>
                                     <span className="badge bg-dark rounded-pill">10%</span>
                                 </li>
@@ -100,7 +100,7 @@ export const Preguntas = () => {
                                 <li className="list-group-item d-flex justify-content-between align-items-start">
                                     <div className="ms-2 me-auto">
                                         <div className="fw-bold">Finalización de la Construcción (65%)</div>
-                                        <p>Al concluir la construcción y asegurarnos de que cada detalle cumple con nuestros estándares de calidad, se procede al pago final del 65% restante. Este pago incluye la entrega de los documentos pertinentes y la llave de la casa, marcando así el cierre exitoso del sueño de un hogar propio.</p>
+                                        <p>Al comenzar la construcción se procede al pago final del 65% restante. Este pago incluye la entrega de los documentos pertinentes y la llave de la casa, marcando así el cierre exitoso del sueño de un hogar propio.</p>
                                     </div>
                                     <span className="badge bg-dark rounded-pill">65%</span>
                                 </li>
@@ -118,14 +118,14 @@ export const Preguntas = () => {
                         <div className="accordion-body">
                             <strong>¿De dónde somos? ¿A donde trabajamos?</strong>
                             <p>Smart-Panel lleva a cabo proyectos de construcción en todo el territorio nacional de Argentina. Nuestra empresa tiene sus raíces en la hermosa provincia de Córdoba, ubicada en el corazón del país.</p>
-                            <ol className="list-group list-group-numbered">
+                            <ol className="list-group-2 list-group-numbered">
                                 <li className="list-group-item d-flex justify-content-between align-items-start">
                                     <div className="ms-2 me-auto">
                                         <div className="fw-bold">Sede Central en Córdoba, Argentina</div>
-                                        <p>Nuestra sede central está estratégicamente ubicada en la ciudad de [Nombre de la ciudad], Córdoba, Argentina. Aquí es donde se coordina y planifica cada proyecto, y donde puedes encontrarnos para discutir tus ideas y necesidades. A continuación, te brindamos la dirección de nuestras oficinas para que nos puedas visitar:
+                                        <p>Nuestra sede central está estratégicamente ubicada en la ciudad de Córdoba, Argentina. Aquí es donde se coordina y planifica cada proyecto, y donde puedes encontrarnos para discutir tus ideas y necesidades. A continuación, te brindamos la dirección de nuestras oficinas para que nos puedas visitar:
 
                                             Dirección:
-                                            [Dirección de tu oficina]</p>
+                                            Av. Rafael Nuñez 3816 (oficina comercial) B° Cerro de las Rosas <br /> Calle Calingasta 5257 (Nuestra Fábrica) B° Deán Funes </p>
                                     </div>
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -133,7 +133,7 @@ export const Preguntas = () => {
                                         <div className="fw-bold">Área de Cobertura Nacional</div>
                                         <p>A pesar de que nuestras oficinas están en Córdoba, nuestra dedicación y alcance no conocen límites geográficos. Trabajamos en todo el país, abarcando diferentes regiones y localidades. Ya sea en el norte, sur, este u oeste, estamos dispuestos y listos para llevar a cabo tu proyecto de construcción en seco con la excelencia y el compromiso que nos caracterizan.
 
-                                            Estamos aquí para transformar tus ideas en una realidad tangible, sin importar dónde te encuentres en Argentina. Si deseas obtener más información sobre nuestra presencia y servicios en tu región o si tienes preguntas adicionales, no dudes en [enlace a la página de contacto].</p>
+                                            Estamos aquí para transformar tus ideas en una realidad tangible, sin importar dónde te encuentres en Argentina. Si deseas obtener más información sobre nuestra presencia y servicios en tu región o si tienes preguntas adicionales, no dudes en llamarnos .</p>
                                     </div>
                                 </li>
                             </ol>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // Agrega la importación de useEffect
 import { Link } from 'react-router-dom';
 import './header.css';
 import logo from '../../assets/logo/Logo-Blanco.png';
@@ -10,8 +10,31 @@ export const Header = () => {
     setCollapsed(!collapsed);
   };
 
-  const handleNavbarLinkClick = () => {
-    setCollapsed(true); 
+  const [downloadPDF, setDownloadPDF] = useState(false);
+
+  useEffect(() => {
+    if (downloadPDF) {
+      downloadPDFs();
+    }
+  }, [downloadPDF]);
+
+  const handleNavbarLinkClick = (event) => { // Agrega el parámetro 'event' para acceder al evento
+    setCollapsed(true);
+    if (event.target.textContent === "Detalles Constructivos") {
+      setDownloadPDF(true);
+    }
+  };
+
+  const downloadPDFs = () => {
+    const pdf1Link = document.createElement('a');
+    pdf1Link.href = '/pdf/FICHA TECNICA CLASICA.pdf'; // Reemplaza con la ruta correcta
+    pdf1Link.download = 'linea-clasica-smart-panel.pdf'; // Nombre del archivo
+    pdf1Link.click();
+
+    const pdf2Link = document.createElement('a');
+    pdf2Link.href = '/pdf/FICHA TECNICA LINEA PREMIUMY.pdf'; // Reemplaza con la ruta correcta
+    pdf2Link.download = 'linea-premium-smart-panel.pdf'; // Nombre del archivo
+    pdf2Link.click();
   };
 
   return (

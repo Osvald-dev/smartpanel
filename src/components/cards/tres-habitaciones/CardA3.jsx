@@ -1,6 +1,6 @@
 import React from 'react';
-import img3 from '../../../assets/images//modelos-renders/sp-a3.png'
-import plano from '../../../assets/images/modelos-planos/108m2-7335-plano.jpg'
+import img3 from '../../../assets/images//modelos-renders/sp-a3.webp';
+import plano2 from '../../../assets/images/modelos-planos/108m2-7335-plano.jpg';
 import { generateRandomPhoneNumber } from '../../../utils/whatsapp';
 import '../card.css';
 
@@ -11,9 +11,9 @@ export const CardA3 = () => {
         window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
     };
     return (
-        <div className="container-mb bg-modelo">
+        <div className="container-full bg-modelo">
 
-            <div id="carouselExampleFade1" className="carousel slide carousel-fade">
+            <div id="carouselExampleFade10" className="carousel slide">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="card">
@@ -23,22 +23,22 @@ export const CardA3 = () => {
                     </div>
                     <div className="carousel-item">
                         <div className="card">
-                            <img src={plano} className="card-img-top img-cards" alt="..." />
+                            <img src={plano2} className="card-img-top img-cards" alt="..." />
 
                         </div>
                     </div>
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade10" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="next">
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade10" data-bs-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className="text-center mb-4">
-                <h2 className='name-model'>SP - A3</h2>
+            <div className="row">
+                <h2 className='name-model'> A3</h2>
                 <ul className="list-group">
                 <li className="list-group-item"><i className="fas fa-ruler"></i> 108 mt2</li>
                     <li className="list-group-item"><i className="fas fa-bed"></i> 3 habitaciones</li>
