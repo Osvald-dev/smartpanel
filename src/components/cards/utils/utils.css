@@ -13,6 +13,9 @@
     justify-content: center;
     align-items: center;
 }
+.text-center{
+    padding-top: 1em !important;
+}
 
 @media (min-width:840px) {
     .btn-primary-hb{
