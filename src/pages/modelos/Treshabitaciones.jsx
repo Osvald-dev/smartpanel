@@ -9,36 +9,32 @@ import { CardF3 } from '../../components/cards/tres-habitaciones/CardF3';
 
 const TresHabitaciones = () => {
   return (
-    <div className='bg-2h'>
       
-      <section className="section-two-bedrooms">
-        <div className="container-full">
+        <div className="container-full bg-modelo">
         <div className="section-title-container">
         <h2 className="section-title"> 3 Habitaciones</h2>
-      </div>
-          <div className="container-full">
-            <div className="col-md-4">
-              <CardA3 />
-            </div>
-            <div className="col-md-4">
-              <CardB3 />
-            </div>
-            <div className="col-md-4">
-              <CardC3 />
-            </div>
-            <div className="col-md-4">
-              <CardD3 />
-            </div>
-            <div className="col-md-4">
-              <CardE3 />
-            </div>
-            <div className="col-md-4">
-              <CardF3 />
-            </div>
           </div>
-        </div>
-      </section>
-    </div>
+              <div className="bg-cards row">
+                <div className="col-12 col-lg-6">
+                  <CardA3 />
+                </div>
+                <div className="col-12 col-lg-6">
+                  <CardB3 />
+                </div>
+                <div className="col-12 col-lg-6">
+                  <CardC3 />
+                </div>
+                <div className="col-12 col-lg-6">
+                  <CardD3 />
+                </div>
+                <div className="col-12 col-lg-6">
+                  <CardE3 />
+                </div>
+                <div className="col-12 col-lg-6">
+                  <CardF3 />
+                </div>
+                </div>
+              </div>
   );
 };
 export default TresHabitaciones;

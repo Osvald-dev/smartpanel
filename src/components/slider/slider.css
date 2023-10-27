@@ -14,6 +14,7 @@
   bottom: 10.25rem;
 }
 
+
 @media (max-width: 580px) {
     .slider img {
       width: auto;
@@ -39,7 +40,7 @@
 /* CSS para el carrusel en pantallas más grandes */
 @media (min-width: 1420px) {
   .carousel-models {
-    max-width: 80%; /* Establece un ancho máximo para el carrusel */
+    max-width: 100%; /* Establece un ancho máximo para el carrusel */
     margin: 0 auto; /* Centra el carrusel en la pantalla */
   }
 }
@@ -48,5 +49,29 @@
 @media (max-width: 1419px) {
   .carousel-models {
     max-width: 100%; /* Usa el ancho completo en pantallas más pequeñas */
+  }
+}
+.carousel-models{
+  max-width: 100%; /* Ajusta el valor según tus necesidades */
+  margin: 0 auto;
+}
+
+.text-inicio{
+  font-size: 1.5rem;
+}
+@media (min-width:640px){
+  .text-inicio{
+    font-size: 2rem;
+  }
+  .p-inicio{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width:1040px){
+  .text-inicio{
+    font-size: 2.8rem;
+  }
+  .p-inicio{
+    font-size: 2rem;
   }
 }

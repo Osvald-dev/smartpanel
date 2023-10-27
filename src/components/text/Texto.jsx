@@ -15,7 +15,7 @@ export const Texto = () => {
                 <div className="texto-div">
                     <div className='h1-div' >
                         <div className='opacity' >
-                            <h1 >SOMOS ESPECIALISTAS EN WOODFRAME</h1>
+                            <h1 className='h1-somos' >SOMOS ESPECIALISTAS EN WOODFRAME</h1>
                             <Link to='/'  >
                                 <div className='arrow-icon'>
                                     <i className='fas fa-arrow-up'></i>
@@ -32,19 +32,23 @@ export const Texto = () => {
                         <p className='lead'>Nos enorgullecemos de nuestra especialización en el sistema WoodFrame, una metodología innovadora que se destaca por su eficiencia y rapidez en el proceso constructivo. Este enfoque nos permite acelerar la culminación de tu proyecto y ofrecerte la oportunidad de convertirte en propietario de tu nuevo espacio en tan solo 30 días.</p>
                         <p className='lead'>Nuestro compromiso no se limita a la rapidez; valoramos la calidad, la precisión y la durabilidad en cada etapa de la construcción. Trabajamos mano a mano contigo para entender tus necesidades y objetivos, diseñando soluciones a medida que superen tus expectativas.</p>
                         <div className="card-container">
-                          
+                       
                             <div className="card-set">
                                 <img src={taller1} alt="construcción en seco San José Entre Ríos Woodframe" className="card-image-set" />
                             </div>
+                           
                             <div className="card-set">
                                 <img src={taller2} alt="construcción en seco Santa Fe Woodframe" className="card-image-set" />
                             </div>
+
                             <div className="card-set">
                                 <img src={camion} alt="construcción en seco Bialet Mase Córdoba Woodframe" className="card-image-set" />
                             </div>
+                            
                             <div className="card-set">
                                 <img src={platea} alt="construcción en seco Santa Fe Woodframe" className="card-image-set" />
                             </div>
+                            
                             <div className="card-set">
                                 <img src={casa} alt="construcción en seco Santa Fe Woodframe" className="card-image-set" />
                             </div>
@@ -55,7 +59,6 @@ export const Texto = () => {
 
                 </div>
             </div>
-
-        </div>
+</div>
     )
 }

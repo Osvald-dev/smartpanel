@@ -38,6 +38,16 @@
     animation: fadeIn 3s forwards; 
     
 }
+@media (min-width:840px) {
+  .separator-text-2{
+    font-size: 2.8rem;
+  }
+}
+@media (min-width:1240px) {
+  .separator-text-2{
+    font-size: 3.8rem;
+  }
+}
 .tucasa{
   display: flex;
   flex-direction: row;
@@ -70,4 +80,7 @@ p{
   opacity: 0.4;
   padding: 2em;
   text-align: center;
+}
+.col-lg-6{
+  padding: 0 !important;
 }

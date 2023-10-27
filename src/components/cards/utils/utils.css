@@ -1,4 +1,4 @@
-.btn-primary{
+.btn-primary-hb{
     color: white;
     background: rgb(181,145,77);
     background: linear-gradient(183deg, rgb(82 82 82) 39%, rgb(0 0 0) 100%);  
@@ -12,4 +12,25 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width:840px) {
+    .btn-primary-hb{
+        padding: 1em;
+        font-size: 1rem;
+        margin:2em
+    }
+    .text-center{
+        font-size: 1.8rem;
+    }
+}
+@media (min-width:1440px) {
+    .btn-primary-hb{
+        padding: 1.6em;
+        font-size: 1.8rem;
+        margin:2.4em
+    }
+    .text-center{
+        font-size: 2.4rem;
+    }
 }

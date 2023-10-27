@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/logo/Logo-Completo-Color.png'
-import plano from '../../assets/images/modelos-planos/100m2-7525-plano.png'
+import plano from '../../assets/images/modelos-planos/100m2-7525-plano.webp'
 import './plano.css'
 
 export const Houseplane = () => {
@@ -20,7 +20,7 @@ export const Houseplane = () => {
                 <div className="card bg-image">
                     <div className="card-body">
                         <input type="file" className="form-control mb-3" accept=".pdf" />
-                        <button className="btn btn-primary">Enviar</button>
+                        <button className="btn btn-primary-plano">Enviar</button>
                     </div>
                 </div>
             </div>

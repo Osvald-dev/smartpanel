@@ -32,10 +32,11 @@
     width: 100%;
     text-align: center;
     padding-top: 1em;
+    background-color: aliceblue;
   }
   
   .section-title {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     margin: 20px 0;
     position: relative;
@@ -45,10 +46,19 @@
     /* Animación de resaltado */
     animation: highlight 2s ease-in-out infinite alternate;
   }
-  
+  @media (min-width:1024px){
+    .section-title{
+      font-size: 3rem;
+    }
+  }
+  @media (min-width:1440px){
+    .section-title{
+      font-size: 4rem;
+    }
+  }
   @keyframes highlight {
     0% {
-      color: #8b6d37; /* Color de inicio */
+      color: #8b6600; /* Color de inicio */
       transform: scale(1);
     }
     100% {
@@ -64,8 +74,16 @@
   
   .container-full{
     background: linear-gradient(to bottom, #010101, #cca643);
-    display: flex;
+    /* display: flex; */
+    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
 }
   
+.bg-modelo{
+  background: linear-gradient(#ffffff, #060605);
+}
+
+.col-lg-6{
+  padding: 0 !important ;
+}

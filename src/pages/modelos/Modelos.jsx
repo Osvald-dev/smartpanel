@@ -4,7 +4,7 @@ import DosHabitaciones from './Doshabitaciones';
 import TresHabitaciones from './Treshabitaciones';
 import Duplex from './Duplex';
 import { Header } from '../../components/header/Header';
-import {Slidercomponent} from '../../components/slider/Slidercomponent';
+import {SliderComponent} from '../../components/slider/Slidercomponent';
 import {Footer2} from '../../components/footer/Footer2'
 import { Precio } from '../Precio';
 export const Modelos = () => {
@@ -14,7 +14,7 @@ export const Modelos = () => {
   return (
     <>
       <Header></Header>
-      <Slidercomponent></Slidercomponent>
+      <SliderComponent></SliderComponent>
       
       <div>
         {pathname === '/modelos/doshabitaciones' && (

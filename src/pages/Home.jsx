@@ -11,7 +11,7 @@ import { CardA3 } from '../components/cards/tres-habitaciones/CardA3';
 import { CardB3 } from '../components/cards/tres-habitaciones/CardB3';
 import { CardC3 } from '../components/cards/tres-habitaciones/CardC3';
 import { CardDP1 } from '../components/cards/duplex/CardDP1';
-import { Houseplane } from '../components/plano/houseplane';
+import { Houseplane } from '../components/plano/Houseplane';
 import { Footer } from '../components/footer/Footer';
 import { Precio } from './Precio';
 import './home.css'
@@ -38,20 +38,20 @@ const Home = () => {
         <div className="separator">
           <span className='separator-text'>Nuestros Modelos</span>
         </div>
-        <div className="container-flull ">
-          <div className='bg-cards'>
-            <div  >              <CardA2 />
+        <div className="container-full ">
+          <div className='bg-cards row'>
+            <div  className="col-12 col-lg-6">              <CardA2 />
             </div>
-            <div  >              <CardB2 />
+            <div className="col-12 col-lg-6" >              <CardB2 />
             </div>
-            <div >
+            <div className="col-12 col-lg-6">
               <CardA3 />
             </div>
-            <div  >              <CardB3 />
+            <div className="col-12 col-lg-6" >              <CardB3 />
             </div>
-            <div  >              <CardC3 />
+            <div className="col-12 col-lg-6" >              <CardC3 />
             </div>
-            <div  >              <CardDP1 />
+            <div className="col-12 col-lg-6" >              <CardDP1 />
             </div>
 
           </div>

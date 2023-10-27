@@ -6,24 +6,22 @@ import { CardDP2 } from '../../components/cards/duplex/CardDP2';
 
 const Duplex = () => {
   return (
-    <div className='bg-2h'>
+  
       
-      <section className="section-two-bedrooms">
-        <div className="container-full">
+        <div className="container-full bg-modelo">
         <div className="section-title-container">
         <h2 className="section-title"> Duplex </h2>
       </div>
-          <div className="container-full">
-            <div className="col-md-4">
+          <div className="bg-cards row">
+            <div className="col-12 col-lg-6">
               <CardDP1 />
             </div>
-            <div className="col-md-4">
+            <div className="col-12 col-lg-6">
               <CardDP2 />
             </div>
           </div>
         </div>
-      </section>
-    </div>
+
   );
 };
 export default Duplex;

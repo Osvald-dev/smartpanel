@@ -25,3 +25,7 @@
 /* .imagenes-plano{
     display: flex;
 } */
+.btn-primary-plano{
+    background-color: #b5914d;
+    color: aliceblue;
+}

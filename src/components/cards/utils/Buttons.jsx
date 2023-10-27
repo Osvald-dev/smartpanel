@@ -7,9 +7,9 @@ export const Buttons = () => {
         < >
            <h4 className="text-center">Conocé todos nuestros modelos</h4>
             <div className="navigation-buttons">
-                <Link to="/modelos/doshabitaciones" className="btn btn-primary mx-2">Dos Habitaciones</Link>
-                <Link to="/modelos/treshabitaciones" className="btn btn-primary mx-2">Tres Habitaciones</Link>
-                <Link to="/modelos/duplex" className="btn btn-primary mx-2">Duplex</Link>
+                <Link to="/modelos/doshabitaciones" className="btn btn-primary-hb mx-2">Dos Habitaciones</Link>
+                <Link to="/modelos/treshabitaciones" className="btn btn-primary-hb mx-2">Tres Habitaciones</Link>
+                <Link to="/modelos/duplex" className="btn btn-primary-hb mx-2">Duplex</Link>
             </div>
         </>
     );

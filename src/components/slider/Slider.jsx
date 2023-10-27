@@ -1,61 +1,42 @@
-import React from 'react'
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
 import render1 from '../../assets/images/modelos-renders/render2.webp';
 import render2 from '../../assets/images/modelos-renders/render3.webp';
 import render3 from '../../assets/images/modelos-renders/render4.webp';
-// import render4 from '../../assets/renders/render4'
-import './slider.css'
+import './slider.css';
 
 export const Slider = () => {
   return (
-    <div className='slider'>
-      <div id="carouselExampleCaptions" className="carousel slide">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <div className="carousel-caption d-md-block">
-              <div className='text-overlay'>
-                <h3>CONSTRUIMOS TU CASA EN 30 DÍAS</h3>
-                <p><b>WoodFrame</b><br />Sistema americano</p>
-              </div>
+    <div className="slider">
+      <Carousel touch={true}>
+        <Carousel.Item>
+          <img src={render1} className="d-block w-100" alt="..." />
+          <Carousel.Caption>
+            <div className="text-overlay">
+              <h3 className='text-inicio'>CONSTRUIMOS TU CASA EN 30 DÍAS</h3>
+              <p className='p-inicio'><b>WoodFrame</b><br />Sistema americano</p>
             </div>
-            <img src={render1} className="d-block w-100" alt="..." />
-
-          </div>
-          <div className="carousel-item">
-            <div className="carousel-caption d-md-block">
-              <div className='text-overlay'>
-                <h3>SISTEMA DE PAGO CONTRA-ENTREGA</h3>
-                <p>Invertí en algo seguro</p>
-              </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={render2} className="d-block w-100" alt="..." />
+          <Carousel.Caption>
+            <div className="text-overlay">
+              <h3 className='text-inicio'>SISTEMA DE PAGO CONTRA-ENTREGA</h3>
+              <p className='p-inicio'>Inviertí en algo seguro</p>
             </div>
-            <img src={render2} className="d-block w-100" alt="..." />
-
-          </div>
-          <div className="carousel-item">
-            <div className="carousel-caption d-md-block">
-              <div className='text-overlay'>
-                <h3>DISEÑOS A MEDIDA</h3>
-                <p>Construimos la casa que siempre soñaste</p>
-              </div>
-
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={render3} className="d-block w-100" alt="..." />
+          <Carousel.Caption>
+            <div className="text-overlay">
+              <h3 className='text-inicio'>DISEÑOS A MEDIDA</h3>
+              <p className='p-inicio'>Construimos la casa que siempre soñaste</p>
             </div>
-            <img src={render3} className="d-block w-100" alt="..." />
-
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </div>
-  )
-}
+  );
+};

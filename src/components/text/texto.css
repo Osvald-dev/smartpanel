@@ -13,7 +13,6 @@
 
 .p-ventajas {
     margin: 1em;
-    /* color: aliceblue; */
 }
 
 .lead {
@@ -33,20 +32,45 @@
     margin-top: 5em;
     margin-bottom: 0px !important;
 }
+.p-ventajas{
+    font-size: 1rem;
+    text-align: center;
+}
 
-h1 {
+.h1-somos{
     text-align: center;
     margin: 1em;
     color: white;
     font-size: 1.5rem;
 }
+@media (min-width:860px) {
+    .h1-somos{
+        font-size: 2.5rem;
+    }
+    .h5-ventajas{
+        font-size: 2rem;
+    }
+    .p-ventajas{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:1460px) {
+    .h1-somos{
+        font-size: 3.5rem;
+    }
+    .h5-ventajas{
+        font-size: 2.5rem;
+    }
+    .p-ventajas{
+        font-size: 1.8rem;
+    }
+}
 
 .img-smart {
     width: 100%;
     background-image: url('../../assets/images/imagen1.webp');
-    /* Ruta de la imagen */
     background-size: cover;
-    /* La imagen cubrirá todo el contenedor */
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -75,8 +99,7 @@ h1 {
 
 .card-set {
     width: 60%;
-    /* Cambiado a 33% para que haya tres tarjetas por fila */
-    overflow: hidden;
+      overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -91,13 +114,17 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ajusta el tamaño de la imagen sin perder la relación de aspecto */
     object-position: center center;
-    /* Centra la imagen */
 }
 
 .text-center {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+}
+.text-center-ventajas{
+    padding-top: 1.6em !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .bg-color-text {
