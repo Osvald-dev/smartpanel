@@ -32,3 +32,10 @@
         width: 140px;
     }
 }
+.dropdown-menu{
+    background-color:#b5914d;
+    border: none;
+}
+.dropdown-item{
+    color: white;
+}

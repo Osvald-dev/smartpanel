@@ -41,7 +41,7 @@ export const CardE3 = () => {
             <div className="row">
                 <h2 className='name-model'> E3</h2>
                 <ul className="list-group">
-                    <li className="list-group-item"><i className="fas fa-ruler"></i> 93 mt2</li>
+                    <li className="list-group-item"><i className="fas fa-ruler"></i> 93 m²</li>
                     <li className="list-group-item"><i className="fas fa-bed"></i> 3 habitaciones</li>
                     <li className="list-group-item"><i className="fas fa-bath"></i> 1 Baño</li>
                     <li className="list-group-item"><i className="fas fa-cutlery"></i> Cocina - Comedor </li>

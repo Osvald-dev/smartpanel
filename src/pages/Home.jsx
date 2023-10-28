@@ -64,7 +64,7 @@ const Home = () => {
         </div>
 
         <div className="separator">
-          <span className='separator-text'>Estas en el camino correcto</span>
+          <span className='separator-text'>Estás en el camino correcto</span>
           <div className='arrow-icon'>
             <i className='fas fa-arrow-down'></i>
           </div>

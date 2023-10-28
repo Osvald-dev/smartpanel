@@ -44,7 +44,7 @@ export const CardC2 = () => {
             <div className="row">
                 <h2 className='name-model'> C2</h2>
                 <ul className="list-group">
-                    <li className="list-group-item"><i className="fas fa-ruler"></i>  60 mt2</li>
+                    <li className="list-group-item"><i className="fas fa-ruler"></i>  60 m²</li>
                     <li className="list-group-item"><i className="fas fa-bed"></i> 2 Habitaciones</li>
                     <li className="list-group-item"><i className="fas fa-bath"></i> 1 Baño</li>
                     <li className="list-group-item"><i className="fas fa-cutlery"></i> Cocina - Comedor </li>
