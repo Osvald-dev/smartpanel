@@ -66,32 +66,32 @@ export const Header = () => {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-              <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Detalles Constructivos
                 </span>
-                {submenuVisible && (
-                  <ul className="dropdown-menu">
-                    <li>
-                      <Link
-                        className={`dropdown-item ${selectedPDF === "linea-premium" ? "selected" : ""}`}
-                        download="FICHA TECNICA LINEA PREMIUMY.pdf"
-                        onClick={() => setSelectedPDF("linea-premium")}
-                      >
-                        Línea Premium
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className={`dropdown-item ${selectedPDF === "linea-clasica" ? "selected" : ""}`}
-                       
-                        download="FICHA TECNICA CLASICA.pdf"
-                        onClick={() => setSelectedPDF("linea-clasica")}
-                      >
-                        Línea Clásica
-                      </Link>
-                    </li>
-                  </ul>
-                )}
+
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link
+                      className={`dropdown-item ${selectedPDF === "linea-premium" ? "selected" : ""}`}
+                      download="FICHA TECNICA LINEA PREMIUMY.pdf"
+                      onClick={() => setSelectedPDF("linea-premium")}
+                    >
+                      Línea Premium
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className={`dropdown-item ${selectedPDF === "linea-clasica" ? "selected" : ""}`}
+
+                      download="FICHA TECNICA CLASICA.pdf"
+                      onClick={() => setSelectedPDF("linea-clasica")}
+                    >
+                      Línea Clásica
+                    </Link>
+                  </li>
+                </ul>
+
               </li>
               <li className="nav-item dropdown">
                 <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
