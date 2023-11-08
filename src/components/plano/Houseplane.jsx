@@ -14,7 +14,7 @@ export const Houseplane = () => {
                         <img className='img-plano' src={plano} alt="planos woodframe casa house woodframe foryou" />
                     </div>
 
-                    <p className='p-pdf'>Envíanos en formato pdf el plano y nos podremos en contacto a la brevedad</p>
+                    <p className='p-pdf'>Envíanos en formato pdf el plano y nos pondremos en contacto a la brevedad</p>
                 </div>
 
                 <div className="card bg-image">

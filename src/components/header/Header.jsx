@@ -1,42 +1,48 @@
-import React, { useState, useEffect } from 'react'; // Agrega la importación de useEffect
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 import logo from '../../assets/logo/Logo-Blanco.png';
 
 export const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
+  const [submenuVisible, setSubmenuVisible] = useState(false);
+  const [selectedPDF, setSelectedPDF] = useState(null);
 
   const handleToggleNavbar = () => {
     setCollapsed(!collapsed);
   };
 
-  const [downloadPDF, setDownloadPDF] = useState(false);
-
   useEffect(() => {
-    if (downloadPDF) {
-      downloadPDFs();
+    if (selectedPDF) {
+      downloadPDF(selectedPDF);
     }
-  }, [downloadPDF]);
+  }, [selectedPDF]);
 
-  const handleNavbarLinkClick = (event) => { // Agrega el parámetro 'event' para acceder al evento
-    setCollapsed(true);
+  const handleNavbarLinkClick = (event) => {
     if (event.target.textContent === "Detalles Constructivos") {
-      setDownloadPDF(true);
+      setSubmenuVisible(!submenuVisible);
+    } else {
+      setCollapsed(true);
+      setSubmenuVisible(false);
+      setSelectedPDF(null);
+
+      if (event.target.textContent === "Línea Premium") {
+        setSelectedPDF("linea-premium");
+      } else if (event.target.textContent === "Línea Clásica") {
+        setSelectedPDF("linea-clasica");
+      }
     }
   };
 
-  const downloadPDFs = () => {
-    const pdf1Link = document.createElement('a');
-    pdf1Link.href = '/pdf/FICHA TECNICA CLASICA.pdf'; // Reemplaza con la ruta correcta
-    pdf1Link.download = 'linea-clasica-smart-panel.pdf'; // Nombre del archivo
-    pdf1Link.click();
-
-    const pdf2Link = document.createElement('a');
-    pdf2Link.href = '/pdf/FICHA TECNICA LINEA PREMIUMY.pdf'; // Reemplaza con la ruta correcta
-    pdf2Link.download = 'linea-premium-smart-panel.pdf'; // Nombre del archivo
-    pdf2Link.click();
+  const downloadPDF = (pdfType) => {
+    const pdfLink = document.createElement('a');
+    pdfLink.href = pdfType === "linea-premium" ? '/pdf/FICHA TECNICA LINEA PREMIUMY.pdf' : '/pdf/FICHA TECNICA CLASICA.pdf';
+    pdfLink.download = `${pdfType}-smart-panel.pdf`;
+    pdfLink.style.display = 'none';
+    document.body.appendChild(pdfLink);
+    pdfLink.click();
+    document.body.removeChild(pdfLink);
   };
-
   return (
     <div className='navegacion' id="#somos">
       <nav className="navbar navbar-expand-lg bg-custom-color">
@@ -59,12 +65,34 @@ export const Header = () => {
                   Preguntas frecuentes
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/" onClick={handleNavbarLinkClick}>
+              <li className="nav-item dropdown">
+              <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Detalles Constructivos
-                </Link>
+                </span>
+                {submenuVisible && (
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className={`dropdown-item ${selectedPDF === "linea-premium" ? "selected" : ""}`}
+                        download="FICHA TECNICA LINEA PREMIUMY.pdf"
+                        onClick={() => setSelectedPDF("linea-premium")}
+                      >
+                        Línea Premium
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={`dropdown-item ${selectedPDF === "linea-clasica" ? "selected" : ""}`}
+                       
+                        download="FICHA TECNICA CLASICA.pdf"
+                        onClick={() => setSelectedPDF("linea-clasica")}
+                      >
+                        Línea Clásica
+                      </Link>
+                    </li>
+                  </ul>
+                )}
               </li>
-
               <li className="nav-item dropdown">
                 <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Modelos
@@ -93,4 +121,7 @@ export const Header = () => {
       </nav>
     </div>
   );
-}
+};
+
+
+
