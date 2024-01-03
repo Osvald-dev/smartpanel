@@ -5,7 +5,7 @@ export const Precio = () => {
         <div>
             <div className='tucasa'>
                 <div className='div-precio'>
-                <span className='separator-text-2'>Construimos tu Casa desde <br /> USD 120 el m²</span>
+                <span className='separator-text-2'>Construimos tu Casa desde <br /> USD 150 el m²</span>
                 </div>
 
             </div>

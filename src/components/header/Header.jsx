@@ -109,6 +109,11 @@ export const Header = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link className="dropdown-item" to="/modelos/smartclasic" onClick={handleNavbarLinkClick}>
+                      Smart Clasic
+                    </Link>
+                  </li>
+                  <li>
                     <Link className="dropdown-item" to="/modelos/duplex" onClick={handleNavbarLinkClick}>
                       Duplex
                     </Link>

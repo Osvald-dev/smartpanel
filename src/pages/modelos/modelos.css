@@ -41,10 +41,9 @@
     margin: 20px 0;
     position: relative;
     display: inline-block;
-    color: #8b6d37; /* Color de inicio */
+    color: #201e1b; /* Color de inicio */
   
     /* Animación de resaltado */
-    animation: highlight 2s ease-in-out infinite alternate;
   }
   @media (min-width:1024px){
     .section-title{
@@ -56,16 +55,7 @@
       font-size: 4rem;
     }
   }
-  @keyframes highlight {
-    0% {
-      color: #8b6600; /* Color de inicio */
-      transform: scale(1);
-    }
-    100% {
-      color: #b1b1b1; /* Color destacado */
-      transform: scale(1.2); /* Escala el texto para dar un efecto de resaltado */
-    }
-  }
+
 
   .row{
     margin:0 ;

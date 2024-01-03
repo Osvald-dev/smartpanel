@@ -4,7 +4,8 @@
     justify-content: center;
 }
 .texto-home {
-    background-color: #b5914d
+    background-image: -moz-linear-gradient(rgb(208, 208, 208));
+    color: black;
 }
 
 .img-fluid {
@@ -17,10 +18,12 @@
 
 .lead {
     text-align: center;
-    padding: 20px;
-    font-size: 1.2em;
+    padding: 10px;
+    font-size: 1em;
     font-weight: 400;
-    color: white;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+        transition: opacity 1s ease-in-out;
 }
 
 .texto-inicio {
@@ -54,6 +57,12 @@
         text-align: center;
         font-size: 1.2rem;
     }
+    .lead{
+        text-align: center;
+        
+    }
+ 
+
 }
 @media (min-width:1460px) {
     .h1-somos{
@@ -65,6 +74,10 @@
     .p-ventajas{
         font-size: 1.8rem;
     }
+    .texto-nosotros{
+        flex-direction: row;
+        max-width: 1240px; 
+    }
 }
 
 .img-smart {
@@ -75,7 +88,7 @@
     background-attachment: fixed;
 
     background-position: center center;
-    height: 55vh;
+    height: 25vh;
 }
 
 
@@ -91,19 +104,21 @@
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding-bottom: 1em;
 }
 
 .card-set {
     width: 60%;
-      overflow: hidden;
+    overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s;
+}
+@media (min-width:640px) {
+    .card-set{
+        width: 30%;
+    }
 }
 
 .card-set:hover {
@@ -112,14 +127,22 @@
 
 .card-image-set {
     width: 100%;
-    height: 100%;
+    max-height: 25rem;
     object-fit: cover;
     object-position: center center;
+
 }
 
-.text-center {
-    /* margin-top: 1rem; */
+.texto-nosotros {
+    
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
+  .texto-nosotros p {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+  }
 .text-center-ventajas{
     padding-top: 1.6em !important;
     align-items: center !important;
@@ -135,3 +158,33 @@
     color: white;
     font-size: 1.3rem;
 }
+.carousel-2 {
+    width: 100%; 
+    max-width: 800px; 
+    margin: auto;
+}
+.texto-div{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .texto-nosotros {
+    text-align: justify;
+  }
+  
+  
+  .fade-in {
+    opacity: 1;
+  }

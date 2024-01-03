@@ -34,13 +34,16 @@ export const Footer2 = () => {
                             <Link to="/preguntas" className="text-white">Preguntas Frecuentes</Link>
                         </li>
                         <li>
-                            <Link to="/modelos/doshabitaciones" className="text-white">Modelos de 2 habitaciones</Link>
+                            <Link to="/modelos/doshabitaciones" className="text-white"> 2 habitaciones</Link>
                         </li>
                         <li>
-                            <Link to="/modelos/treshabitaciones" className="text-white">Modelos de 3 habitaciones</Link>
+                            <Link to="/modelos/treshabitaciones" className="text-white"> 3 habitaciones</Link>
                         </li>
                         <li>
-                            <Link to="/modelos/duplex" className="text-white">Modelos de Duplex</Link>
+                            <Link to="/modelos/smartclasic" className="text-white">Smart-Clasic</Link>
+                        </li>
+                        <li>
+                            <Link to="/modelos/duplex" className="text-white">Duplex</Link>
                         </li>
                     </ul>
                 </div>

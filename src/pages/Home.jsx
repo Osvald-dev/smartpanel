@@ -11,7 +11,6 @@ import { CardA3 } from '../components/cards/tres-habitaciones/CardA3';
 import { CardB3 } from '../components/cards/tres-habitaciones/CardB3';
 import { CardC3 } from '../components/cards/tres-habitaciones/CardC3';
 import { CardDP1 } from '../components/cards/duplex/CardDP1';
-import { Houseplane } from '../components/plano/Houseplane';
 import { Footer } from '../components/footer/Footer';
 import { Precio } from './Precio';
 import './home.css'
@@ -59,9 +58,7 @@ const Home = () => {
             <Buttons />
           </div>
         </div>
-        <div>
-          <Houseplane></Houseplane>
-        </div>
+       
 
         <div className="separator">
           <span className='separator-text'>Estás en el camino correcto</span>

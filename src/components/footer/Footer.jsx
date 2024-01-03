@@ -63,6 +63,9 @@ export const Footer = () => {
                         <li>
                             <Link to="/modelos/doshabitaciones" className="text-white">Modelos</Link>
                         </li>
+                        <li>
+                            <Link to="/modelos/smartclasic" className="text-white">Smart-Clasic</Link>
+                        </li>
                     </ul>
                 </div>
 

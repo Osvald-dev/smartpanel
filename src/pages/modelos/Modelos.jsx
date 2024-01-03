@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import DosHabitaciones from './Doshabitaciones';
 import TresHabitaciones from './Treshabitaciones';
 import Duplex from './Duplex';
+import { SmartClasic } from './SmartClasic';
 import { Header } from '../../components/header/Header';
 import {SliderComponent} from '../../components/slider/Slidercomponent';
 import {Footer2} from '../../components/footer/Footer2'
@@ -23,10 +24,14 @@ export const Modelos = () => {
         {pathname === '/modelos/treshabitaciones' && (
           <TresHabitaciones />
         )}
+        {pathname === '/modelos/smartclasic' && (
+          <SmartClasic />
+        )}
        {pathname === '/modelos/duplex' && <Duplex />}
         {pathname !== '/modelos/doshabitaciones' &&
           pathname !== '/modelos/treshabitaciones' &&
           pathname !== '/modelos/cuatrohabitaciones' &&
+          pathname !== '/modelos/smartclasic' &&
           pathname !== '/modelos/duplex' && <p>Ruta no encontrada</p>}
       </div>
       <Precio />
