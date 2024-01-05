@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
+
 import './header.css';
 import logo from '../../assets/logo/Logo-Blanco.png';
+// import { generateRandomPhoneNumber } from '../../utils/whatsapp';
 
 export const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -18,6 +21,11 @@ export const Header = () => {
     }
   }, [selectedPDF]);
 
+  // const handleWhatsAppAction = () => {
+  //   const phoneNumber = generateRandomPhoneNumber();
+  //   const whatsappLink = `https://wa.me/${phoneNumber}`;
+  //   window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
+  // };
   const handleNavbarLinkClick = (event) => {
     if (event.target.textContent === "Detalles Constructivos") {
       setSubmenuVisible(!submenuVisible);
@@ -118,7 +126,11 @@ export const Header = () => {
                       Duplex
                     </Link>
                   </li>
+
                 </ul>
+              </li>
+              <li>
+             
               </li>
             </ul>
           </div>
