@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaArrowUp } from 'react-icons/fa';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {generateRandomPhoneNumber} from '../../utils/whatsapp.js'
 import './footer.css'
 
 export const Footer = () => {
@@ -72,16 +73,7 @@ export const Footer = () => {
                 </div>
 
 
-                <div className="redes-footer">
-                    <div className="footer-social-icons">
-                        <a href="https://www.instagram.com/smartpanelcba/" className='icon-size'>
-                            <FaInstagram className="text-white" />
-                        </a>
-                        <a href="https://www.facebook.com/smartpanelcba" className='icon-size'>
-                            <FaFacebook className="text-white" />
-                        </a>
-                    </div>
-                </div>
+             
                 <div className="whatsapp-icon" onClick={handleWhatsAppAction}>
                   <a href="https://api.whatsapp.com/send?phone=TUNUMERO" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faWhatsapp} />

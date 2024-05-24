@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import render1 from '../../assets/images/modelos-renders/render2.webp';
-import render2 from '../../assets/images/modelos-renders/render3.webp';
-import render3 from '../../assets/images/modelos-renders/render4.webp';
+import render1 from '../../assets/images/slide_nuevo.jpeg';
+import render2 from '../../assets/images/slide_n1.jpeg';
+import render3 from '../../assets/images/slide_n2.png';
 import './slider.css';
 
 export const Slider = () => {
@@ -36,6 +36,7 @@ export const Slider = () => {
             </div>
           </Carousel.Caption>
         </Carousel.Item>
+    
       </Carousel>
     </div>
   );

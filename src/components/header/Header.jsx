@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-
 import './header.css';
+import '../footer/footer.css';
 import logo from '../../assets/logo/Logo-Blanco.png';
-// import { generateRandomPhoneNumber } from '../../utils/whatsapp';
 
 export const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -21,11 +21,6 @@ export const Header = () => {
     }
   }, [selectedPDF]);
 
-  // const handleWhatsAppAction = () => {
-  //   const phoneNumber = generateRandomPhoneNumber();
-  //   const whatsappLink = `https://wa.me/${phoneNumber}`;
-  //   window.open(whatsappLink, '_blank'); // Abre en una nueva pestaña
-  // };
   const handleNavbarLinkClick = (event) => {
     if (event.target.textContent === "Detalles Constructivos") {
       setSubmenuVisible(!submenuVisible);
@@ -51,6 +46,7 @@ export const Header = () => {
     pdfLink.click();
     document.body.removeChild(pdfLink);
   };
+
   return (
     <div className='navegacion' id="#somos">
       <nav className="navbar navbar-expand-lg bg-custom-color">
@@ -63,6 +59,18 @@ export const Header = () => {
           </button>
           <div className={`collapse navbar-collapse ${collapsed ? '' : 'show'}`}>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-warning">
+              <li className='nav-item'>
+                <div className="redes-footer">
+                  <div className="footer-social-icons">
+                    <a href="https://www.instagram.com/smartpanelcba/" className='icon-size' target="_blank" rel="noopener noreferrer">
+                      <FaInstagram className="text-white" />
+                    </a>
+                    <a href="https://www.facebook.com/smartpanelcba" className='icon-size' target="_blank" rel="noopener noreferrer">
+                      <FaFacebook className="text-white" />
+                    </a>
+                  </div>
+                </div>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/quienes-somos" onClick={handleNavbarLinkClick}>
                   ¿Quiénes somos?
@@ -77,7 +85,6 @@ export const Header = () => {
                 <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Detalles Constructivos
                 </span>
-
                 <ul className="dropdown-menu">
                   <li>
                     <Link
@@ -91,7 +98,6 @@ export const Header = () => {
                   <li>
                     <Link
                       className={`dropdown-item ${selectedPDF === "linea-clasica" ? "selected" : ""}`}
-
                       download="FICHA TECNICA CLASICA.pdf"
                       onClick={() => setSelectedPDF("linea-clasica")}
                     >
@@ -99,7 +105,6 @@ export const Header = () => {
                     </Link>
                   </li>
                 </ul>
-
               </li>
               <li className="nav-item dropdown">
                 <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -126,11 +131,7 @@ export const Header = () => {
                       Duplex
                     </Link>
                   </li>
-
                 </ul>
-              </li>
-              <li>
-             
               </li>
             </ul>
           </div>
@@ -139,6 +140,3 @@ export const Header = () => {
     </div>
   );
 };
-
-
-

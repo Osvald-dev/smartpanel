@@ -21,6 +21,7 @@
     font-size: x-large
 }
 .navbar-collapse{
+    text-align: right;
     color: white;
     background-color: #b5914d;
 }
