@@ -55,7 +55,7 @@
   }
   
   .btn-success {
-    background-color: #ca8928;
+    background-color: #28afca;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -75,5 +75,5 @@
     object-fit: cover;
   }
   .name-model{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }

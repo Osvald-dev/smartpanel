@@ -26,7 +26,7 @@ export const Texto = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg'>
+                    <div className='col-xs columna1'>
                         <FadeInParagraph>
                             <strong>¡Bienvenidos a SmartPanel!</strong>
                             <br />

@@ -1,6 +1,6 @@
 import React from 'react'
 import './preguntas.css'
-import logo from '../../assets/logo/Logo-Blanco.png'
+import logo from '../../assets/logo/logo-web.png'
 import { Link } from 'react-router-dom';
 
 import { generateRandomPhoneNumber } from '../../utils/whatsapp';

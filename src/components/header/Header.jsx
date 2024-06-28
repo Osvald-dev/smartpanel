@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './header.css';
 import '../footer/footer.css';
-import logo from '../../assets/logo/Logo-Blanco.png';
+import logo from '../../assets/logo/logo-web.png';
 
 export const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -49,7 +49,7 @@ export const Header = () => {
 
   return (
     <div className='navegacion' id="#somos">
-      <nav className="navbar navbar-expand-lg bg-custom-color">
+      <nav className="navbar navbar-expand-lg ">
         <div className="container-sm">
           <Link className="navbar-brand" to="/">
             <img className="custom-logo" src={logo} alt="logotipo" />

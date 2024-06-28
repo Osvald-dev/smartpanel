@@ -4,9 +4,13 @@
     display: flex;
     justify-content: space-evenly;
     
+
+}
+.nav-bar{
+    background-color: transparent !important;
 }
 .bg-custom-color{
-    background-color: #b5914d;
+    background-color: transparent !important;
 }
 .nav-item{
     padding: 1em;
@@ -15,7 +19,7 @@
     color: aliceblue;
 }
 .nav-link active{
-    color: aliceblue;
+    color: rgb(98, 182, 255);
 }
 .navbar-toggler-icon{
     font-size: x-large
@@ -23,7 +27,10 @@
 .navbar-collapse{
     text-align: right;
     color: white;
-    background-color: #b5914d;
+    background-color: transparent !important;
+}
+.navbar-toggler{
+    background: radial-gradient(circle, #1e5c8f, #2f68a0,#1e4b72);
 }
 .custom-logo {
     width: 100px; 
@@ -34,10 +41,11 @@
     }
 }
 .dropdown-menu{
-    background-color:#b5914d;
+    background-color:transparent !important;
     border: none;
 }
 .dropdown-item{
     color: white;
-}
+    background: #081E43;
 
+}

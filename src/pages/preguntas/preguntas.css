@@ -1,13 +1,14 @@
 .bg-preguntas{
-    background-color: rgb(184, 184, 184);
+    /* background-color: rgb(184, 184, 184); */
     height: 100vh;
 }
 .accordion-button{
-    background-color: #b5914d;
+    background-color: #0e0148;
+    color: #ffffff;
 }
 
 .navbar{
-    background-color: #b5914d;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -32,6 +33,6 @@
    color: rgb(255, 255, 255);
 }
 .list-group-2{
-    background-color: #b5914d;
+    background-color: #08306b;
     padding: 0;
 }

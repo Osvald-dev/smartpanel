@@ -7,6 +7,9 @@ import { CardD2 } from '../../components/cards/dos-habitaciones/CardD2';
 import { CardE2 } from '../../components/cards/dos-habitaciones/CardE2';
 import { CardF2 } from '../../components/cards/dos-habitaciones/CardF2';
 import { CardG2 } from '../../components/cards/dos-habitaciones/CardG2';
+import { CardH2 } from '../../components/cards/dos-habitaciones/CardH2';
+import { CardI2 } from '../../components/cards/dos-habitaciones/CardI2';
+import { CardJ2 } from '../../components/cards/dos-habitaciones/CardJ2';
 
 const DosHabitaciones = () => {
   return (
@@ -37,6 +40,15 @@ const DosHabitaciones = () => {
             </div>
             <div className="col-12 col-lg-6">
               <CardG2 />
+            </div>
+            <div className="col-12 col-lg-6">
+              <CardH2 />
+            </div>
+            <div className="col-12 col-lg-6">
+              <CardI2 />
+            </div>
+            <div className="col-12 col-lg-6">
+              <CardJ2 />
             </div>
           </div>
         </div>

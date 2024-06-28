@@ -57,12 +57,12 @@
     }
 }
 .fa-whatsapp {
-    background-color:#25d366;
-    
+    background-color:#14641f;
     z-index: 10000;
-    padding: 0.2em;
-    border-radius: 50%;
+    padding: 0.3em;
+    border-radius: 90%;
 }
+
 .fa{
     color: #ffffff !important;
 }

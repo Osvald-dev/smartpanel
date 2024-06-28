@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #b5914d;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -32,7 +32,7 @@
     width: 100%;
     text-align: center;
     padding-top: 1em;
-    background-color: aliceblue;
+    color: white;
   }
   
   .section-title {
@@ -41,7 +41,7 @@
     margin: 20px 0;
     position: relative;
     display: inline-block;
-    color: #201e1b; /* Color de inicio */
+    color: #ffffff; /* Color de inicio */
   
     /* Animación de resaltado */
   }
@@ -63,7 +63,7 @@
   }
   
   .container-full{
-    background: linear-gradient(to bottom, #010101, #cca643);
+    /* background: linear-gradient(to bottom, #010101, #3e84cf); */
     /* display: flex; */
     /* flex-direction: column; */
     flex-wrap: wrap;
@@ -71,7 +71,7 @@
 }
   
 .bg-modelo{
-  background: linear-gradient(#ffffff, #060605);
+  background: transparent;
 }
 
 .col-lg-6{

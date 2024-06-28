@@ -10,8 +10,8 @@
   .separator-text {
     font-size: 3.5rem;
     font-weight: bold;
- 
-    background-color: #ffffff; /* Ajusta el color de fondo según tu diseño */
+    color: white;
+    background-color: transparent; /* Ajusta el color de fondo según tu diseño */
     padding: 0 10px; /* Ajusta el espaciado alrededor del texto */
     width: 100%;
     text-align: center;
@@ -23,7 +23,7 @@
 .fa-arrow-down{
   font-size: 5em;
  
-  color:#b5914d;
+  color:#ffffff;
 }
   .separator-text-2 {
     font-size: 1.8rem;

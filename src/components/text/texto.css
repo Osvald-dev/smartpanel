@@ -4,8 +4,8 @@
     justify-content: center;
 }
 .texto-home {
-    background-image: -moz-linear-gradient(rgb(208, 208, 208));
-    color: black;
+    background-image: transparent;
+    color: rgb(255, 255, 255);
 }
 
 .img-fluid {
@@ -21,7 +21,7 @@
     padding: 10px;
     font-size: 1em;
     font-weight: 400;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     opacity: 0;
         transition: opacity 1s ease-in-out;
 }
@@ -31,10 +31,10 @@
     padding: 0.5em;
 }
 
-.container {
+/* .container {
     margin-top: 5em;
     margin-bottom: 0px !important;
-}
+} */
 .p-ventajas{
     font-size: 1rem;
     text-align: center;
@@ -42,7 +42,7 @@
 
 .h1-somos{
     text-align: center;
-    margin: 1em;
+    /* margin: 1em; */
     color: white;
     font-size: 1.5rem;
 }
@@ -99,7 +99,7 @@
 .opacity {
     background-color: #b5914d;
     opacity: 0.8;
-    padding: 1em;
+   
 }
 
 .card-container {
@@ -151,7 +151,7 @@
 }
 
 .bg-color-text {
-    background-color: #b5914d;
+    background-color: transparent;
     color: aliceblue;
 }
 .fa-arrow-up{
@@ -187,4 +187,9 @@
   
   .fade-in {
     opacity: 1;
+  }
+
+  .columna1{
+    margin: 1rem;
+    padding: 20px;
   }

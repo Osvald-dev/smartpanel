@@ -1,8 +1,7 @@
-import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import render1 from '../../assets/images/slide_nuevo.jpeg';
-import render2 from '../../assets/images/slide_n1.jpeg';
-import render3 from '../../assets/images/slide_n2.png';
+import render1 from '../../assets/images/slider0.webp';
+import render2 from '../../assets/images/slider1.webp';
+import render3 from '../../assets/images/slider3.webp';
 import './slider.css';
 
 export const Slider = () => {

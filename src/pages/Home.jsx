@@ -5,11 +5,11 @@ import { Header } from '../components/header/Header';
 import { Slider } from '../components/slider/Slider';
 import { Texto } from '../components/text/Texto';
 import { Textoventajas } from '../components/text/Textoventajas';
-import { CardA2 } from '../components/cards/dos-habitaciones/CardA2';
+import { CardJ2 } from '../components/cards/dos-habitaciones/CardJ2';
 import { CardB2 } from '../components/cards/dos-habitaciones/CardB2';
 import { CardA3 } from '../components/cards/tres-habitaciones/CardA3';
 import { CardB3 } from '../components/cards/tres-habitaciones/CardB3';
-import { CardC3 } from '../components/cards/tres-habitaciones/CardC3';
+import { CardG3 } from '../components/cards/tres-habitaciones/CardG3';
 import { CardDP1 } from '../components/cards/duplex/CardDP1';
 import { Footer } from '../components/footer/Footer';
 import { Precio } from './Precio';
@@ -39,7 +39,7 @@ const Home = () => {
         </div>
         <div className="container-full ">
           <div className='bg-cards row'>
-            <div  className="col-12 col-lg-6">              <CardA2 />
+            <div  className="col-12 col-lg-6">              <CardJ2 />
             </div>
             <div className="col-12 col-lg-6" >              <CardB2 />
             </div>
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
             <div className="col-12 col-lg-6" >              <CardB3 />
             </div>
-            <div className="col-12 col-lg-6" >              <CardC3 />
+            <div className="col-12 col-lg-6" >              <CardG3 />
             </div>
             <div className="col-12 col-lg-6" >              <CardDP1 />
             </div>

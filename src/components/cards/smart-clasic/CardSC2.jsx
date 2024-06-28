@@ -1,6 +1,6 @@
 import React from 'react';
-import img from '../../../assets/images/modelos-renders/render-scB.jpg'
-import plano from '../../../assets/images/modelos-planos/plano-scB.jpg'
+import img from '../../../assets/images/modelos-renders/c-b.webp'
+import plano from '../../../assets/images/modelos-planos/planoweb-cb.webp'
 import CardModel from '../CardModel';
 
 export const CardSC2 = () => {
