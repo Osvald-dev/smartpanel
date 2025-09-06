@@ -12,7 +12,7 @@
     font-weight: bold;
     color: white;
     background-color: transparent; /* Ajusta el color de fondo según tu diseño */
-    padding: 0 10px; /* Ajusta el espaciado alrededor del texto */
+    padding: 25px; /* Ajusta el espaciado alrededor del texto */
     width: 100%;
     text-align: center;
     position: relative;
@@ -49,18 +49,14 @@
   }
 }
 .tucasa{
-  display: flex;
-  flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 35vh;
+
     background-image: url('../assets/images/tucasa.webp');
     background-repeat: repeat-x;
     background-position: center center;
     background-attachment: fixed;
     background-color: #000000; 
     background-size: cover;
+    height: 55vh;
 }
 @keyframes fadeIn {
     from {

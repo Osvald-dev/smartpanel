@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { FaInstagram, FaFacebook } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo/logo-web.png";
 
-import './header.css';
-import '../footer/footer.css';
-import logo from '../../assets/logo/logo-web.png';
+import "./header.css";
+import "../footer/footer.css";
 
 export const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
-  const [submenuVisible, setSubmenuVisible] = useState(false);
+  const [submenuConstructivos, setSubmenuConstructivos] = useState(false);
+  const [submenuModelos, setSubmenuModelos] = useState(false);
   const [selectedPDF, setSelectedPDF] = useState(null);
 
   const handleToggleNavbar = () => {
@@ -21,122 +21,112 @@ export const Header = () => {
     }
   }, [selectedPDF]);
 
-  const handleNavbarLinkClick = (event) => {
-    if (event.target.textContent === "Detalles Constructivos") {
-      setSubmenuVisible(!submenuVisible);
-    } else {
-      setCollapsed(true);
-      setSubmenuVisible(false);
-      setSelectedPDF(null);
-
-      if (event.target.textContent === "Línea Premium") {
-        setSelectedPDF("linea-premium");
-      } else if (event.target.textContent === "Línea Clásica") {
-        setSelectedPDF("linea-clasica");
-      }
-    }
+  const handleNavbarLinkClick = () => {
+    setCollapsed(true);
+    setSubmenuConstructivos(false);
+    setSubmenuModelos(false);
+    setSelectedPDF(null);
   };
 
   const downloadPDF = (pdfType) => {
-    const pdfLink = document.createElement('a');
-    pdfLink.href = pdfType === "linea-premium" ? '/pdf/FICHA TECNICA LINEA PREMIUMY.pdf' : '/pdf/FICHA TECNICA CLASICA.pdf';
+    const pdfLink = document.createElement("a");
+    pdfLink.href =
+      pdfType === "linea-premium"
+        ? "/pdf/FICHA TECNICA LINEA PREMIUMY.pdf"
+        : "/pdf/FICHA TECNICA CLASICA.pdf";
     pdfLink.download = `${pdfType}-smart-panel.pdf`;
-    pdfLink.style.display = 'none';
+    pdfLink.style.display = "none";
     document.body.appendChild(pdfLink);
     pdfLink.click();
     document.body.removeChild(pdfLink);
   };
 
   return (
-    <div className='navegacion' id="#somos">
-      <nav className="navbar navbar-expand-lg ">
-        <div className="container-sm">
+    <header className="navegacion" id="#somos">
+      <nav className="navbar">
+        <div className="container-sm d-flex justify-content-between align-items-center">
+          {/* Logo */}
           <Link className="navbar-brand" to="/">
             <img className="custom-logo" src={logo} alt="logotipo" />
           </Link>
-          <button className="navbar-toggler" type="button" onClick={handleToggleNavbar}>
-            <span className="navbar-toggler-icon"></span>
+
+          {/* Botón Hamburguesa */}
+          <button
+            className={`hamburger ${collapsed ? "" : "is-active"}`}
+            type="button"
+            onClick={handleToggleNavbar}
+          >
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
           </button>
-          <div className={`collapse navbar-collapse ${collapsed ? '' : 'show'}`}>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-warning">
-              <li className='nav-item'>
-                <div className="redes-footer">
-                  <div className="footer-social-icons">
-                    <a href="https://www.instagram.com/smartpanelcba/" className='icon-size' target="_blank" rel="noopener noreferrer">
-                      <FaInstagram className="text-white" />
-                    </a>
-                    <a href="https://www.facebook.com/smartpanelcba" className='icon-size' target="_blank" rel="noopener noreferrer">
-                      <FaFacebook className="text-white" />
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/quienes-somos" onClick={handleNavbarLinkClick}>
+
+          {/* Menú móvil */}
+          <div className={`mobile-menu ${collapsed ? "" : "open"}`}>
+            <ul className="text-start"> {/* 👈 ahora alineado a la izquierda */}
+              <li>
+                <Link to="/quienes-somos" onClick={handleNavbarLinkClick}>
                   ¿Quiénes somos?
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/preguntas" onClick={handleNavbarLinkClick}>
-                  Preguntas frecuentes
+              <li>
+                <Link to="/contacto" onClick={handleNavbarLinkClick}>
+                  Contacto
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li>
+                <span onClick={() => setSubmenuConstructivos(!submenuConstructivos)}>
                   Detalles Constructivos
                 </span>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link
-                      className={`dropdown-item ${selectedPDF === "linea-premium" ? "selected" : ""}`}
-                      download="FICHA TECNICA LINEA PREMIUMY.pdf"
-                      onClick={() => setSelectedPDF("linea-premium")}
-                    >
+                {submenuConstructivos && (
+                  <ul className="submenu">
+                    <li onClick={() => setSelectedPDF("linea-premium")}>
                       Línea Premium
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className={`dropdown-item ${selectedPDF === "linea-clasica" ? "selected" : ""}`}
-                      download="FICHA TECNICA CLASICA.pdf"
-                      onClick={() => setSelectedPDF("linea-clasica")}
-                    >
+                    </li>
+                    <li onClick={() => setSelectedPDF("linea-clasica")}>
                       Línea Clásica
-                    </Link>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                )}
               </li>
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li>
+                <span onClick={() => setSubmenuModelos(!submenuModelos)}>
                   Modelos
                 </span>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link className="dropdown-item" to="/modelos/doshabitaciones" onClick={handleNavbarLinkClick}>
-                      2 Habitaciones
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/modelos/treshabitaciones" onClick={handleNavbarLinkClick}>
-                      3 Habitaciones
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/modelos/smartclasic" onClick={handleNavbarLinkClick}>
-                      Smart Clasic
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/modelos/duplex" onClick={handleNavbarLinkClick}>
-                      Duplex
-                    </Link>
-                  </li>
-                </ul>
+                {submenuModelos && (
+                  <ul className="submenu">
+                    <li>
+                      <Link to="/modelos/doshabitaciones" onClick={handleNavbarLinkClick}>
+                        2 Habitaciones
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/modelos/treshabitaciones" onClick={handleNavbarLinkClick}>
+                        3 Habitaciones
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/modelos/smartclasic" onClick={handleNavbarLinkClick}>
+                        Smart Clasic
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/modelos/smart-ai" onClick={handleNavbarLinkClick}>
+                        Smart AI
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/modelos/duplex" onClick={handleNavbarLinkClick}>
+                        Duplex
+                      </Link>
+                    </li>
+                  </ul>
+                )}
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };

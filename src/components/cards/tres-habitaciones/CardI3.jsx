@@ -6,7 +6,7 @@ import plano from '../../../assets/images/modelos-planos/PLANOWEB-I3.webp'
 export const CardI3 = () => {
     
 
-    const modelName = 'I3';
+    const modelName = 'I 3';
     const images = [img, plano];
     const details = [
       { icon: 'fas fa-ruler', text: '100 m²' },

@@ -49,7 +49,7 @@ const CardModel = ({ modelName, images, details }) => {
       </div>
       <div className="text-center info">
         <button className="btn btn-success" onClick={handleWhatsAppAction}>
-          ¡Más información!
+          COTIZAR MODELO
         </button>
       </div>
     </div>

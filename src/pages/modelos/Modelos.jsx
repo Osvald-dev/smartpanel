@@ -4,9 +4,10 @@ import DosHabitaciones from './Doshabitaciones';
 import TresHabitaciones from './Treshabitaciones';
 import Duplex from './Duplex';
 import { SmartClasic } from './SmartClasic';
+import {SmartAI} from './SmartAI';
 import { Header } from '../../components/header/Header';
 import {SliderComponent} from '../../components/slider/Slidercomponent';
-import {Footer2} from '../../components/footer/Footer2'
+import {Footer} from '../../components/footer/Footer'
 import { Precio } from '../Precio';
 export const Modelos = () => {
   const location = useLocation();
@@ -24,18 +25,22 @@ export const Modelos = () => {
         {pathname === '/modelos/treshabitaciones' && (
           <TresHabitaciones />
         )}
-        {pathname === '/modelos/smartclasic' && (
+        {pathname === '/modelos/smart-clasic' && (
           <SmartClasic />
+        )}
+        {pathname === '/modelos/smart-ai' && (
+          <SmartAI />
         )}
        {pathname === '/modelos/duplex' && <Duplex />}
         {pathname !== '/modelos/doshabitaciones' &&
           pathname !== '/modelos/treshabitaciones' &&
           pathname !== '/modelos/cuatrohabitaciones' &&
-          pathname !== '/modelos/smartclasic' &&
+          pathname !== '/modelos/smart-clasic' &&
+          pathname !== '/modelos/smart-ai' &&
           pathname !== '/modelos/duplex' && <p>Ruta no encontrada</p>}
       </div>
       <Precio />
-      <Footer2 />
+      <Footer />
     </>
   );
 };

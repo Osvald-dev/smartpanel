@@ -1,50 +1,65 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
 
 export const Textoventajas = () => {
+  const ventajas = [
+    {
+      icon: "fas fa-leaf",
+      titulo: "Menor impacto ambiental",
+      texto:
+        "Gracias al ahorro energético durante la construcción y en el uso diario de calefacción y aire acondicionado.",
+    },
+    {
+      icon: "fas fa-clock",
+      titulo: "Rapidez",
+      texto:
+        "El sistema constructivo liviano permite un montaje ágil y eficiente, previamente ejecutado en taller u obra.",
+    },
+    {
+      icon: "fas fa-shield-alt",
+      titulo: "Seguridad",
+      texto:
+        "Diseñadas para resistir diversas condiciones climáticas, con membranas internas que refuerzan la estructura.",
+    },
+    {
+      icon: "fas fa-hard-hat",
+      titulo: "Durabilidad",
+      texto:
+        "Con un mantenimiento adecuado, nuestras construcciones alcanzan una vida útil prolongada y confiable.",
+    },
+  ];
+
   return (
-    <div className='bg-color-text'>
-      <div className="container my-5">
-        <div className="row">
-          <div className=" col-md-6">
+    <section className="bg-color-text py-5">
+      <div className="container">
+        <div className="text-center mb-5">
+          <h2 className="fw-bold">Ventajas de nuestro sistema</h2>
+          <p className="text-muted">
+            Descubrí por qué elegir <strong>SmartPanel</strong> es una decisión inteligente.
+          </p>
+        </div>
 
-            <div className="text-center-ventajas">
-              <i className="fas fa-leaf fa-3x mb-1"></i>
-              <h5  className='h5-ventajas'>Menor impacto ambiental</h5>
-              <p className='p-ventajas'>Debido al ahorro de energía tanto en la construcción como en el gasto de
-                calefacción y aire acondicionado.</p>
+        <div className="row g-4">
+          {ventajas.map((item, index) => (
+            <div key={index} className="col-12 col-md-6 col-lg-3">
+              <motion.div
+                className="card h-100 shadow-sm text-center border-0 card-ventaja"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05, boxShadow: "0 12px 25px rgba(0,0,0,0.15)" }}
+              >
+                <div className="card-body">
+                  <i className={`${item.icon} fa-3x mb-3 `}></i>
+                  <h5 className="fw-bold">{item.titulo}</h5>
+                  <p className="text-muted">{item.texto}</p>
+                </div>
+              </motion.div>
             </div>
-          </div>
-          <div className="text-center-ventajas">
-            <i className="fas fa-clock fa-3x mb-1"></i>
-            <h5 className='h5-ventajas'>Rapidez</h5>
-            <p className='p-ventajas'>Al ser un sistema constructivo liviano, facilita el montaje el cual es previamente
-              ejecutado en obra o taller.</p>
-          </div>
-          <div className=" col-md-6">
-
-            <div className="text-center-ventajas">
-              <i className="fas fa-shield-alt fa-3x mb-1"></i>
-              <h5 className='h5-ventajas'>Seguridad</h5>
-              <p className='p-ventajas'>Reforzadas para soportar diversas condiciones climáticas. Contiene membranas
-                internas para reforzar.</p>
-            </div>
-          </div>
-          <div className="col-md-6">
-
-            <div className="text-center-ventajas">
-              <i className="fas fa-hard-hat fa-3x mb-1"></i>
-              <h5 className='h5-ventajas'>Durabilidad</h5>
-              <p className='p-ventajas'>Con un mantenimiento adecuado como cualquier construcción, se logra maximizar
-                su durabilidad</p>
-            </div>
-          </div>
-          <div className="col-md-6">
-
-
-          </div>
+          ))}
         </div>
       </div>
-
-    </div>
-  )
-}
+    </section>
+  );
+};

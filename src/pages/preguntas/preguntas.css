@@ -1,38 +1,58 @@
-.bg-preguntas{
-    /* background-color: rgb(184, 184, 184); */
-    height: 100vh;
-}
-.accordion-button{
-    background-color: #0e0148;
-    color: #ffffff;
+.preguntas-home {
+    background: #081e43;
+    color: #fff;
+    padding: 4rem 1rem;
 }
 
-.navbar{
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    justify-content: space-around;
-}
-
-.navbar-logo{
-    width: 130px;
-}
-.whats{
-    background-color: transparent;
-    border: none;
-    font-size: 2.5rem;
-}
-.arrow{
-    background-color: transparent;
-    border: none;
+.title-preguntas {
+    text-align: center;
     font-size: 2rem;
-    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
-.fa-whatsapp{
-   color: rgb(255, 255, 255);
+
+.subtitle-preguntas {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
-.list-group-2{
-    background-color: #08306b;
-    padding: 0;
+
+.accordion-button {
+    background: #1e5c8f;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
 }
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    background: #0b2a60;
+    color: #f1f1f1;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.list-faq {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-faq li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.faq-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+

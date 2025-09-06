@@ -35,6 +35,94 @@
 .custom-logo {
     width: 100px; 
 }
+
+/* Botón hamburguesa */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; /* por encima del menú */
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger.is-active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.is-active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Menú móvil moderno */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* oculto */
+  width: 75%;
+  height: 100vh;
+    background: rgba(8, 30, 67, 0.6); /* color con transparencia */
+  backdrop-filter: blur(8px);       /* desenfoque */
+  -webkit-backdrop-filter: blur(8px); /* soporte en Safari */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu ul {
+    color:white;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.mobile-menu li {
+  margin: 1rem 0;
+}
+
+.mobile-menu a, 
+.mobile-menu span {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover,
+.mobile-menu span:hover {
+  color: #62b6ff;
+}
+
+/* Submenú */
+.submenu {
+  margin-top: 0.5rem;
+}
+.submenu li {
+  /* font-size: 1rem; */
+  margin: 0.3rem 0;
+}
+
+
 @media (min-width:1170px){
     .custom-logo{
         width: 140px;
