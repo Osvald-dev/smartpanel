@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaArrowUp } from 'react-icons/fa';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { generateRandomPhoneNumber } from '../../utils/whatsapp.js';
 import logo from '../../assets/logo/logo-web.png'
@@ -16,12 +15,7 @@ export const Footer = () => {
         });
     };
 
-    const handleWhatsAppAction = () => {
-        const phoneNumber = generateRandomPhoneNumber();
-        const whatsappLink = `https://wa.me/${phoneNumber}`;
-        window.open(whatsappLink, '_blank');
-    };
-
+  
     const downloadPDF = (filePath, fileName) => {
         const pdfLink = document.createElement('a');
         pdfLink.href = filePath;
@@ -76,9 +70,7 @@ export const Footer = () => {
                         <div className="footer-social-icons">
                             <a href="https://www.instagram.com/smartpanelcba/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                             <a href="https://www.facebook.com/smartpanelcba" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-                            <div className="whatsapp-icon" onClick={handleWhatsAppAction}>
-                                <FontAwesomeIcon icon={faWhatsapp} />
-                            </div>
+                  
                         </div>
                     </div>
 

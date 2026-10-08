@@ -55,9 +55,9 @@ const Home = () => {
             </div>
 
           </div>
-          <div>
+          {/* <div>
             <Buttons />
-          </div>
+          </div> */}
         </div>
        
 

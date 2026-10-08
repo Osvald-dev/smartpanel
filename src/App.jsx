@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Modelos } from './pages/modelos/Modelos';
 import { ContactForm } from './pages/Contacto';
 import { Texto } from './components/text/Texto';
+import { WhatsAppButton } from "./components/WhatsAppButton";
 import Home from './pages/Home';
 import ScrollToTop from './components/cards/utils/Scroll';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/modelos/*" element={<Modelos />} />
           <Route path='/contacto/' element={<ContactForm />} />
         </Routes>
+        <WhatsAppButton/>
       </div>
     </Router>
   );
