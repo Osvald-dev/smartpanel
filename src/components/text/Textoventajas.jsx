@@ -1,28 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaLeaf, FaClock, FaShieldHalved, FaHelmetSafety } from "react-icons/fa6";
 
 export const Textoventajas = () => {
   const ventajas = [
     {
-      icon: "fas fa-leaf",
+      icon: FaLeaf,
       titulo: "Menor impacto ambiental",
       texto:
         "Gracias al ahorro energético durante la construcción y en el uso diario de calefacción y aire acondicionado.",
     },
     {
-      icon: "fas fa-clock",
+      icon: FaClock,
       titulo: "Rapidez",
       texto:
         "El sistema constructivo liviano permite un montaje ágil y eficiente, previamente ejecutado en taller u obra.",
     },
     {
-      icon: "fas fa-shield-alt",
+      icon: FaShieldHalved,
       titulo: "Seguridad",
       texto:
         "Diseñadas para resistir diversas condiciones climáticas, con membranas internas que refuerzan la estructura.",
     },
     {
-      icon: "fas fa-hard-hat",
+      icon: FaHelmetSafety,
       titulo: "Durabilidad",
       texto:
         "Con un mantenimiento adecuado, nuestras construcciones alcanzan una vida útil prolongada y confiable.",
@@ -51,7 +52,7 @@ export const Textoventajas = () => {
                 whileHover={{ scale: 1.05, boxShadow: "0 12px 25px rgba(0,0,0,0.15)" }}
               >
                 <div className="card-body">
-                  <i className={`${item.icon} fa-3x mb-3 `}></i>
+                  <item.icon className="icon-accent mb-3" size="3em" />
                   <h5 className="fw-bold">{item.titulo}</h5>
                   <p className="text-muted">{item.texto}</p>
                 </div>

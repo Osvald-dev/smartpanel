@@ -57,8 +57,9 @@
   border-radius: 1rem;
 }
 
-.fas{
+.icon-accent{
     color:#a8d9e8;
+    vertical-align: -0.125em;
 }
 
 .bg-color-text {

@@ -2,7 +2,20 @@ import React, { useState } from 'react';
 import { generateRandomPhoneNumber } from '../../utils/whatsapp.js';
 import { Carousel } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { FaRuler, FaBed, FaBath, FaUtensils, FaCar, FaHouse, FaUmbrella, FaDungeon } from 'react-icons/fa6';
 import './card.css';
+
+// Los CardXX pasan el ícono como clase de Font Awesome; se mapea a react-icons.
+const ICONS = {
+  'fas fa-ruler': FaRuler,
+  'fas fa-bed': FaBed,
+  'fas fa-bath': FaBath,
+  'fas fa-cutlery': FaUtensils,
+  'fas fa-car': FaCar,
+  'fas fa-home': FaHouse,
+  'fas fa-umbrella': FaUmbrella,
+  'fas fa-dungeon': FaDungeon,
+};
 
 const CardModel = ({ modelName, images, details }) => {
   const [index, setIndex] = useState(0);
@@ -40,11 +53,14 @@ const CardModel = ({ modelName, images, details }) => {
       <div className="row">
         <h2 className="name-model">{modelName}</h2>
         <ul className="list-group">
-          {details.map((detail, i) => (
-            <li key={i} className="list-group-item">
-              <i className={detail.icon}></i> {detail.text}
-            </li>
-          ))}
+          {details.map((detail, i) => {
+            const Icon = ICONS[detail.icon];
+            return (
+              <li key={i} className="list-group-item">
+                {Icon && <Icon className="icon-accent" />} {detail.text}
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className="text-center info">

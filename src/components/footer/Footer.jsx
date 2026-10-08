@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaArrowUp } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { generateRandomPhoneNumber } from '../../utils/whatsapp.js';
 import logo from '../../assets/logo/logo-web.png'
 import './footer.css';
