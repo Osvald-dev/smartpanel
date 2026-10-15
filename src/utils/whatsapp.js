@@ -1,6 +1,5 @@
 export const generateRandomPhoneNumber = () => {
   const phoneNumbers = [
-    '5493518589164',
     '5493517038778'
   ];
 
